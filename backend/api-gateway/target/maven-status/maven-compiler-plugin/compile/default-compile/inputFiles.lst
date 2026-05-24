@@ -1,0 +1,7 @@
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\ApiGatewayApplication.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\config\JwtProperties.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\config\RestTemplateConfig.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\proxy\ApiProxyController.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\security\JwtAuthFilter.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\security\JwtUtil.java
+C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\src\main\java\com\hospital\gateway\security\SecurityConfig.java
