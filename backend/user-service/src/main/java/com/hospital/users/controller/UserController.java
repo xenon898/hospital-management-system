@@ -1,8 +1,10 @@
 package com.hospital.users.controller;
 
+import com.hospital.users.dto.AdminCreateDoctorRequest;
+import com.hospital.users.dto.AdminCreatePatientRequest;
+import com.hospital.users.dto.AdminCreateUserResponse;
 import com.hospital.users.dto.AuthResponse;
 import com.hospital.users.dto.LoginRequest;
-import com.hospital.users.dto.RegisterRequest;
 import com.hospital.users.dto.UserMeResponse;
 import com.hospital.users.service.UserService;
 import jakarta.validation.Valid;
@@ -19,9 +21,16 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/register")
-    public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
-        return ResponseEntity.ok(userService.register(request));
+    @PostMapping("/admin/create-doctor")
+    public ResponseEntity<AdminCreateUserResponse> createDoctor(@Valid @RequestBody AdminCreateDoctorRequest request,
+                                                                @RequestHeader("Authorization") String authorization) {
+        return ResponseEntity.ok(userService.createDoctor(request, authorization));
+    }
+
+    @PostMapping("/admin/create-patient")
+    public ResponseEntity<AdminCreateUserResponse> createPatient(@Valid @RequestBody AdminCreatePatientRequest request,
+                                                                 @RequestHeader("Authorization") String authorization) {
+        return ResponseEntity.ok(userService.createPatient(request, authorization));
     }
 
     @PostMapping("/login")

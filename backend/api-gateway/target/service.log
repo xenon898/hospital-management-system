@@ -8,39 +8,39 @@
 
  :: Spring Boot ::                (v3.3.2)
 
-2026-05-24T14:45:45.298+05:30  INFO 28748 --- [           main] c.h.gateway.ApiGatewayApplication        : Starting ApiGatewayApplication using Java 18.0.2.1 with PID 28748 (C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal)
-2026-05-24T14:45:45.302+05:30  INFO 28748 --- [           main] c.h.gateway.ApiGatewayApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-05-24T14:45:45.303+05:30 DEBUG 28748 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.gateway.ApiGatewayApplication
-2026-05-24T14:45:45.456+05:30 DEBUG 28748 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e4d3ce5
-2026-05-24T14:45:47.305+05:30 DEBUG 28748 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
-2026-05-24T14:45:47.320+05:30 DEBUG 28748 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
-2026-05-24T14:45:47.320+05:30 DEBUG 28748 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-05-24T14:45:47.336+05:30  INFO 28748 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-05-24T14:45:47.351+05:30  INFO 28748 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-24T14:45:47.351+05:30  INFO 28748 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2026-05-24T14:45:47.414+05:30  INFO 28748 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-05-24T14:45:47.414+05:30 DEBUG 28748 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-05-24T14:45:47.414+05:30  INFO 28748 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1958 ms
-2026-05-24T14:45:47.445+05:30 DEBUG 28748 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthFilter urls=[/*] order=2147483647
-2026-05-24T14:45:47.445+05:30 DEBUG 28748 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-05-24T14:45:47.461+05:30 DEBUG 28748 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2026-05-24T14:45:47.476+05:30 DEBUG 28748 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-05-24T14:45:47.476+05:30 DEBUG 28748 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
-2026-05-24T14:45:47.476+05:30 DEBUG 28748 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2026-05-24T14:45:47.867+05:30  WARN 28748 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2026-05-25T21:01:53.004+05:30  INFO 8356 --- [           main] c.h.gateway.ApiGatewayApplication        : Starting ApiGatewayApplication using Java 21.0.10 with PID 8356 (C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway)
+2026-05-25T21:01:53.006+05:30  INFO 8356 --- [           main] c.h.gateway.ApiGatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T21:01:53.008+05:30 DEBUG 8356 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.gateway.ApiGatewayApplication
+2026-05-25T21:01:53.109+05:30 DEBUG 8356 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57576994
+2026-05-25T21:01:54.552+05:30 DEBUG 8356 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
+2026-05-25T21:01:54.552+05:30 DEBUG 8356 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
+2026-05-25T21:01:54.553+05:30 DEBUG 8356 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-05-25T21:01:54.574+05:30  INFO 8356 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-25T21:01:54.588+05:30  INFO 8356 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T21:01:54.588+05:30  INFO 8356 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-05-25T21:01:54.634+05:30  INFO 8356 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T21:01:54.634+05:30 DEBUG 8356 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-05-25T21:01:54.636+05:30  INFO 8356 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1527 ms
+2026-05-25T21:01:54.664+05:30 DEBUG 8356 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthFilter urls=[/*] order=2147483647
+2026-05-25T21:01:54.664+05:30 DEBUG 8356 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-05-25T21:01:54.684+05:30 DEBUG 8356 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2026-05-25T21:01:54.686+05:30 DEBUG 8356 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-05-25T21:01:54.686+05:30 DEBUG 8356 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-05-25T21:01:54.687+05:30 DEBUG 8356 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2026-05-25T21:01:55.036+05:30  WARN 8356 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: ced867ce-0193-4145-a439-602cb67baed2
+Using generated security password: 30f2c59e-1141-432a-b1e9-d7132c93c98c
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-24T14:45:47.897+05:30  INFO 28748 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-24T14:45:48.112+05:30 DEBUG 28748 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2026-05-24T14:45:48.152+05:30 DEBUG 28748 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.gateway'. Automatic @Repository and @Entity scanning is enabled.
-2026-05-24T14:45:48.212+05:30 DEBUG 28748 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-05-24T14:45:48.447+05:30 DEBUG 28748 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-05-24T14:45:48.522+05:30 DEBUG 28748 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-05-24T14:45:48.630+05:30  INFO 28748 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2026-05-24T14:45:48.663+05:30 DEBUG 28748 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-05-25T21:01:55.055+05:30  INFO 8356 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-25T21:01:55.214+05:30 DEBUG 8356 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2026-05-25T21:01:55.241+05:30 DEBUG 8356 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.gateway'. Automatic @Repository and @Entity scanning is enabled.
+2026-05-25T21:01:55.288+05:30 DEBUG 8356 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-25T21:01:55.428+05:30 DEBUG 8356 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-25T21:01:55.466+05:30 DEBUG 8356 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-25T21:01:55.525+05:30  INFO 8356 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-25T21:01:55.542+05:30 DEBUG 8356 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -1020,242 +1020,461 @@ Unconditional classes:
 
 
 
-2026-05-24T14:45:48.680+05:30  INFO 28748 --- [           main] c.h.gateway.ApiGatewayApplication        : Started ApiGatewayApplication in 4.137 seconds (process running for 4.889)
-2026-05-24T14:45:48.680+05:30 DEBUG 28748 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-05-24T14:45:48.680+05:30 DEBUG 28748 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-05-24T14:46:05.881+05:30  INFO 28748 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-24T14:46:05.881+05:30  INFO 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5ccea5d2
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@12d6bb2e
-2026-05-24T14:46:05.881+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-05-24T14:46:05.881+05:30  INFO 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2026-05-24T14:46:05.932+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:46:05.936+05:30 DEBUG 28748 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:46:05.961+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:46:05.976+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:46:05.976+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@273cb736] as "application/json"
-2026-05-24T14:46:06.193+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T14:46:06.196+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T14:46:06.206+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:46:06.207+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T14:46:06.215+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:47:29.255+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:47:29.256+05:30 DEBUG 28748 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:47:29.259+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8081/api/users/register
-2026-05-24T14:47:29.259+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:47:29.259+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Writing [[B@76cca15e] with org.springframework.http.converter.ByteArrayHttpMessageConverter
-2026-05-24T14:47:29.280+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T14:47:29.290+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T14:47:29.290+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T14:47:29.290+05:30 DEBUG 28748 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T14:47:35.526+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:47:35.527+05:30 DEBUG 28748 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:47:35.528+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:47:35.528+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:47:35.528+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@1f966297] as "application/json"
-2026-05-24T14:47:35.543+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-05-24T14:47:35.543+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:47:35.543+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 114, 111, 108, 101, 32, 105, 115, 32, 114, 101, 113,  (truncated)...]
-2026-05-24T14:47:35.543+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:50:14.835+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:50:14.835+05:30 DEBUG 28748 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:50:14.845+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:50:14.851+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:50:14.852+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@58e04dc6] as "application/json"
-2026-05-24T14:50:14.964+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-05-24T14:50:14.966+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:50:14.967+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 117, 115, 101, 114, 110, 97, 109, 101, 32, 105, 115,  (truncated)...]
-2026-05-24T14:50:14.970+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:52:49.109+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:52:49.109+05:30 DEBUG 28748 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:52:49.109+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:52:49.109+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:52:49.109+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@66f5c1f5] as "application/json"
-2026-05-24T14:52:49.132+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-05-24T14:52:49.135+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:52:49.135+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 112, 97, 115, 115, 119, 111, 114, 100, 32, 105, 115,  (truncated)...]
-2026-05-24T14:52:49.137+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:53:36.344+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:53:36.347+05:30 DEBUG 28748 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:53:36.348+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:53:36.350+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:53:36.350+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@1ac67a92] as "application/json"
-2026-05-24T14:53:36.512+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T14:53:36.513+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T14:53:36.514+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:53:36.516+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T14:53:36.517+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:56:13.850+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:56:13.853+05:30 DEBUG 28748 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:56:13.854+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8081/api/users/register
-2026-05-24T14:56:13.855+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:56:13.856+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@7aceeb8] with org.springframework.http.converter.ByteArrayHttpMessageConverter
-2026-05-24T14:56:13.875+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T14:56:13.876+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T14:56:13.876+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T14:56:13.876+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T14:58:28.730+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:58:28.732+05:30 DEBUG 28748 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:58:28.732+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8081/api/users/register
-2026-05-24T14:58:28.732+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:58:28.732+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@5627b8aa] with org.springframework.http.converter.ByteArrayHttpMessageConverter
-2026-05-24T14:58:28.749+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T14:58:28.749+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T14:58:28.749+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T14:58:28.749+05:30 DEBUG 28748 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T14:59:07.741+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:59:07.742+05:30 DEBUG 28748 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T14:59:07.744+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T14:59:07.745+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T14:59:07.746+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [[B@ad5b439] as "application/json"
-2026-05-24T14:59:07.922+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T14:59:07.923+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T14:59:07.925+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T14:59:07.925+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T14:59:07.927+05:30 DEBUG 28748 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:00:45.814+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:00:45.814+05:30 DEBUG 28748 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:00:45.814+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:00:45.814+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:00:45.814+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@449bff0a] as "application/json"
-2026-05-24T15:00:45.947+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:00:45.956+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:00:45.956+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:00:45.956+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:00:45.956+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:02:55.310+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:02:55.311+05:30 DEBUG 28748 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
-2026-05-24T15:02:55.312+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
-2026-05-24T15:02:55.313+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:02:55.314+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@2879f549] as "application/json"
-2026-05-24T15:02:55.624+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T15:02:55.626+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T15:02:55.626+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T15:02:55.627+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T15:08:13.717+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:08:13.718+05:30 DEBUG 28748 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:08:13.720+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:08:13.721+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:08:13.722+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@5cb0504d] as "application/json"
-2026-05-24T15:08:13.880+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:08:13.881+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:08:13.882+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:08:13.883+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:08:13.884+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:09:56.343+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:09:56.345+05:30 DEBUG 28748 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:09:56.346+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:09:56.346+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:09:56.346+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@6832235b] as "application/json"
-2026-05-24T15:09:56.363+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-05-24T15:09:56.363+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:09:56.363+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 85, 115, 101, 114, 110, 97, 109, 101, 32, 97, 108, 11 (truncated)...]
-2026-05-24T15:09:56.373+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:10:11.367+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:10:11.367+05:30 DEBUG 28748 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:10:11.367+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:10:11.367+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:10:11.372+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@1b0c6ee9] as "application/json"
-2026-05-24T15:10:11.496+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:10:11.496+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:10:11.496+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:10:11.496+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:10:11.496+05:30 DEBUG 28748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:12:35.046+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:12:35.046+05:30 DEBUG 28748 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
-2026-05-24T15:12:35.046+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
-2026-05-24T15:12:35.046+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:12:35.046+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@156e09e7] as "application/json"
-2026-05-24T15:12:35.087+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T15:12:35.087+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T15:12:35.087+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T15:12:35.087+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T15:14:18.765+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:14:18.771+05:30 DEBUG 28748 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:14:18.771+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:14:18.772+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:14:18.773+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@5277b5ab] as "application/json"
-2026-05-24T15:14:18.894+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:14:18.904+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:14:18.905+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:14:18.906+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:14:18.907+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:20:44.947+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:20:44.947+05:30 DEBUG 28748 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
-2026-05-24T15:20:44.947+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
-2026-05-24T15:20:44.947+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:20:44.947+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@1279c2c5] as "application/json"
-2026-05-24T15:20:44.964+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T15:20:44.976+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T15:20:44.976+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T15:20:44.978+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T15:23:28.387+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:23:28.387+05:30 DEBUG 28748 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:23:28.387+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:23:28.396+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:23:28.397+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@7f650ff8] as "application/json"
-2026-05-24T15:23:28.533+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:23:28.534+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:23:28.535+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:23:28.536+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:23:28.537+05:30 DEBUG 28748 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:23:54.802+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:23:54.804+05:30 DEBUG 28748 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
-2026-05-24T15:23:54.806+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
-2026-05-24T15:23:54.806+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:23:54.806+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@506c952e] as "application/json"
-2026-05-24T15:23:56.519+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:23:56.522+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:23:56.523+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:23:56.523+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 51, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 49, 55, 44, 34, 110, 97 (truncated)...]
-2026-05-24T15:23:56.523+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:27:47.395+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/patients", parameters={}
-2026-05-24T15:27:47.395+05:30 DEBUG 28748 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
-2026-05-24T15:27:47.395+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8083/api/patients
-2026-05-24T15:27:47.395+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:27:47.395+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@56483b3d] as "application/json"
-2026-05-24T15:27:47.511+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T15:27:47.520+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T15:27:47.520+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T15:27:47.520+05:30 DEBUG 28748 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T15:28:46.840+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:28:46.840+05:30 DEBUG 28748 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:28:46.840+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:28:46.840+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:28:46.855+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [[B@78a260a6] as "application/json"
-2026-05-24T15:28:46.873+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 403 FORBIDDEN
-2026-05-24T15:28:46.875+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [application/octet-stream, */*, application/json, application/*+json]
-2026-05-24T15:28:46.875+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{}]
-2026-05-24T15:28:46.876+05:30 DEBUG 28748 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 403 FORBIDDEN
-2026-05-24T15:29:07.588+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:29:07.589+05:30 DEBUG 28748 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:29:07.590+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:29:07.591+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:29:07.592+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@6c0daa85] as "application/json"
-2026-05-24T15:29:07.611+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
-2026-05-24T15:29:07.614+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:29:07.615+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 85, 115, 101, 114, 110, 97, 109, 101, 32, 97, 108, 11 (truncated)...]
-2026-05-24T15:29:07.615+05:30 DEBUG 28748 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:29:15.792+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:29:15.793+05:30 DEBUG 28748 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
-2026-05-24T15:29:15.794+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
-2026-05-24T15:29:15.794+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:29:15.794+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@5344c8fe] as "application/json"
-2026-05-24T15:29:15.923+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:29:15.923+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:29:15.924+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:29:15.925+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
-2026-05-24T15:29:15.926+05:30 DEBUG 28748 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:30:36.499+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/patients", parameters={}
-2026-05-24T15:30:36.500+05:30 DEBUG 28748 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
-2026-05-24T15:30:36.501+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8083/api/patients
-2026-05-24T15:30:36.502+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
-2026-05-24T15:30:36.502+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@7c42d76e] as "application/json"
-2026-05-24T15:30:36.566+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
-2026-05-24T15:30:36.567+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
-2026-05-24T15:30:36.568+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
-2026-05-24T15:30:36.569+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 51, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 49, 56, 44, 34, 110, 97 (truncated)...]
-2026-05-24T15:30:36.570+05:30 DEBUG 28748 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:01:55.629+05:30  INFO 8356 --- [           main] c.h.gateway.ApiGatewayApplication        : Started ApiGatewayApplication in 3.109 seconds (process running for 3.795)
+2026-05-25T21:01:55.630+05:30 DEBUG 8356 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-05-25T21:01:55.633+05:30 DEBUG 8356 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-05-25T21:03:51.128+05:30  INFO 8356 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T21:03:51.128+05:30  INFO 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@260ce48c
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@581581f2
+2026-05-25T21:03:51.128+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-05-25T21:03:51.128+05:30  INFO 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-25T21:03:51.159+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.159+05:30 DEBUG 8356 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:03:51.190+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:03:51.206+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:51.206+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@72475d04] as "application/json"
+2026-05-25T21:03:51.865+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:51.866+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:51.872+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:51.873+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:03:51.877+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:51.894+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.894+05:30 DEBUG 8356 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:03:51.894+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:03:51.894+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:51.894+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@523f3af5] as "application/json"
+2026-05-25T21:03:51.960+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:51.960+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:51.960+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:51.960+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:03:51.976+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:51.981+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.981+05:30 DEBUG 8356 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:03:51.981+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:03:51.981+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:51.981+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@44d2bf1a] as "application/json"
+2026-05-25T21:03:52.062+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:52.062+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:52.062+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:52.062+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:03:52.065+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:52.210+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-25T21:03:52.210+05:30 DEBUG 8356 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:03:52.210+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
+2026-05-25T21:03:52.210+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:52.210+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@623973e] as "application/json"
+2026-05-25T21:03:52.625+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:52.625+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:52.625+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:52.625+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 52, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 50, 48, 44, 34, 110, 97 (truncated)...]
+2026-05-25T21:03:52.625+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:52.645+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/patients", parameters={}
+2026-05-25T21:03:52.646+05:30 DEBUG 8356 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-25T21:03:52.647+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8083/api/patients
+2026-05-25T21:03:52.647+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:52.647+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@6f78ef59] as "application/json"
+2026-05-25T21:03:53.050+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.050+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.050+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.050+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 52, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 50, 49, 44, 34, 110, 97 (truncated)...]
+2026-05-25T21:03:53.050+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.082+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/appointments", parameters={}
+2026-05-25T21:03:53.082+05:30 DEBUG 8356 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-25T21:03:53.083+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8084/api/appointments
+2026-05-25T21:03:53.083+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:53.084+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@7bc5330d] as "application/json"
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 51, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 48, 44, 34 (truncated)...]
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments/doctor", parameters={}
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments/doctor
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:53.554+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [[B@51118bc6] as "application/json"
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 51, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 48, 44 (truncated)...]
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : PATCH "/api/appointments/3/status", parameters={}
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP PATCH http://localhost:8084/api/appointments/3/status
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:53.692+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Writing [[B@2164a21f] as "application/json"
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 51, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 48, 44, 34 (truncated)...]
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.740+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors/prescriptions", parameters={}
+2026-05-25T21:03:53.755+05:30 DEBUG 8356 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:03:53.755+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors/prescriptions
+2026-05-25T21:03:53.755+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:53.755+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [[B@29ac06e4] as "application/json"
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 50, 44, 34, 97, 112, 112, 111, 105, 110, 116, 109, 101, 110, 116, 73, 10 (truncated)...]
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/patient-history/4", parameters={}
+2026-05-25T21:03:53.882+05:30 DEBUG 8356 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors/patient-history/4
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@750ebf83] as "application/json"
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:03:53.897+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:03:53.913+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 50, 44, 34, 97, 112, 112, 111, 105, 110, 116, 109, 101, 110, 116, 73 (truncated)...]
+2026-05-25T21:03:53.913+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:08:54.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:08:54.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:08:54.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:08:54.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:08:54.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@4d7dfacd] as "application/json"
+2026-05-25T21:08:54.635+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:08:54.636+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:08:54.636+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:08:54.636+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:08:54.637+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.240+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.240+05:30 DEBUG 8356 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:09:35.240+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:09:35.240+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.240+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@5cf8cec2] as "application/json"
+2026-05-25T21:09:35.311+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.311+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.327+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.327+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:09:35.327+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.419+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.419+05:30 DEBUG 8356 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:09:35.419+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:09:35.419+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.419+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@4a1549f0] as "application/json"
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.490+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@5e58e5d0] as "application/json"
+2026-05-25T21:09:35.578+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.579+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@61bf1cc6] as "application/json"
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 53, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 50, 52, 44, 34, 110, 97 (truncated)...]
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/patients", parameters={}
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-25T21:09:35.593+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8083/api/patients
+2026-05-25T21:09:35.609+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@7502c205] as "application/json"
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 53, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 50, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-25T21:09:35.610+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.627+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/appointments", parameters={}
+2026-05-25T21:09:35.627+05:30 DEBUG 8356 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-25T21:09:35.627+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8084/api/appointments
+2026-05-25T21:09:35.627+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.627+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [[B@1eeb75af] as "application/json"
+2026-05-25T21:09:35.642+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.643+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.643+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.644+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44, 34 (truncated)...]
+2026-05-25T21:09:35.644+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.650+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : PATCH "/api/appointments/4/status", parameters={}
+2026-05-25T21:09:35.651+05:30 DEBUG 8356 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-25T21:09:35.651+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP PATCH http://localhost:8084/api/appointments/4/status
+2026-05-25T21:09:35.652+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.652+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Writing [[B@255b22eb] as "application/json"
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44, 34 (truncated)...]
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors/prescriptions", parameters={}
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors/prescriptions
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.660+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [[B@276bfda1] as "application/json"
+2026-05-25T21:09:35.677+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.677+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.677+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.677+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 51, 44, 34, 97, 112, 112, 111, 105, 110, 116, 109, 101, 110, 116, 73, 10 (truncated)...]
+2026-05-25T21:09:35.677+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.692+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/patient-history/5", parameters={}
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors/patient-history/5
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@7bc94f52] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 51, 44, 34, 97, 112, 112, 111, 105, 110, 116, 109, 101, 110, 116, 73 (truncated)...]
+2026-05-25T21:09:35.693+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.057+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-26T06:54:43.057+05:30 DEBUG 8356 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-26T06:54:43.057+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/register
+2026-05-26T06:54:43.057+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:43.057+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@90d0354] as "application/json"
+2026-05-26T06:54:43.299+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:43.299+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:43.299+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:43.299+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 116, 111, 107, 101, 110, 34, 58, 34, 101, 121, 74, 104, 98, 71, 99, 105, 79, 105, 74, 73,  (truncated)...]
+2026-05-26T06:54:43.299+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.327+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:54:43.327+05:30 DEBUG 8356 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:54:43.328+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:54:43.329+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:43.329+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@4e2ad46a] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:43.358+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:43.358+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:43.359+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:43.359+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:54:43.360+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@44d81342] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:43.636+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:54:43.653+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:43.654+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@65808429] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:43.678+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:54:43.678+05:30 DEBUG 8356 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:54:43.694+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:54:43.694+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:43.694+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@713d587d] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:43.720+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:43.720+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:43.720+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:43.720+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:54:43.731+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.738+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:43.738+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:43.741+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:43.742+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:54:43.745+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.987+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:43.988+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:43.988+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:43.989+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:54:43.990+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:44.066+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:54:44.067+05:30 DEBUG 8356 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:54:44.067+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:54:44.067+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:44.067+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [[B@2f3f6f2b] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:44.105+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:44.105+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:44.105+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:44.105+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:54:44.105+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:44.301+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:54:44.301+05:30 DEBUG 8356 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:54:44.301+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:54:44.301+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:54:44.301+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Writing [[B@6059a824] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:54:44.335+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:54:44.335+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:54:44.335+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:54:44.335+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:54:44.335+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:25.919+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-26T06:56:25.920+05:30 DEBUG 8356 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:56:25.921+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8082/api/doctors
+2026-05-26T06:56:25.921+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:25.921+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [[B@23546d94] as "application/json"
+2026-05-26T06:56:25.947+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:25.948+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:25.948+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:25.948+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 54, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:25.950+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:26.179+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:56:26.179+05:30 DEBUG 8356 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:56:26.195+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:56:26.195+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:26.195+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@7ff6d4f3] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:26.217+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:26.217+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:26.217+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:26.217+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:26.232+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@775050f5] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:26.263+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@3059c32c] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:26.298+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:49.342+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/patients", parameters={}
+2026-05-26T06:56:49.345+05:30 DEBUG 8356 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:56:49.345+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8083/api/patients
+2026-05-26T06:56:49.345+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:49.351+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@b2843cb] as "application/json"
+2026-05-26T06:56:49.410+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:49.410+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:49.410+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:49.410+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 105, 100, 34, 58, 54, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 57, 57, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:49.410+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@3aa266c2] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@208216fd] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:49.772+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@343fc83e] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:49.811+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:11.017+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:57:11.019+05:30 DEBUG 8356 --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:57:11.020+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:57:11.021+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:11.021+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Writing [[B@3b47d62a] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:11.039+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:11.040+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:11.041+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:11.042+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:57:11.042+05:30 DEBUG 8356 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Writing [[B@5503da25] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:11.331+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:57:11.347+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:11.347+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Writing [[B@6656f79a] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:11.379+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:11.383+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:11.386+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:57:11.393+05:30 DEBUG 8356 --- [nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/appointments", parameters={}
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/patients", parameters={}
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyAppointments(HttpServletRequest)
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyDoctors(HttpServletRequest)
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyPatients(HttpServletRequest)
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8084/api/appointments
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8082/api/doctors
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8083/api/patients
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Writing [[B@3af44569] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Writing [[B@3decd388] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:13.506+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Writing [[B@55596740] with org.springframework.http.converter.ByteArrayHttpMessageConverter
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 53, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [io-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.client.RestTemplate              : Reading to [[B] as "application/json"
+2026-05-26T06:57:13.545+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:13.560+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 49, 44, 34, 117, 115, 101, 114, 73, 100, 34, 58, 54, 44, 34, 110, 97 (truncated)...]
+2026-05-26T06:57:13.560+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:13.561+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{91, 123, 34, 105, 100, 34, 58, 52, 44, 34, 100, 111, 99, 116, 111, 114, 73, 100, 34, 58, 50, 52, 44 (truncated)...]
+2026-05-26T06:57:13.561+05:30 DEBUG 8356 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:13.563+05:30 DEBUG 8356 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:45.207+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:45.208+05:30 DEBUG 8356 --- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-26T06:57:45.208+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/login
+2026-05-26T06:57:45.208+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:45.214+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Writing [[B@5ad317db] as "application/json"
+2026-05-26T06:57:45.314+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-05-26T06:57:45.329+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:45.329+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 73, 110, 118, 97, 108, 105, 100, 32, 117, 115, 101, 1 (truncated)...]
+2026-05-26T06:57:45.329+05:30 DEBUG 8356 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:50.843+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:50.845+05:30 DEBUG 8356 --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-26T06:57:50.845+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/login
+2026-05-26T06:57:50.845+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:50.845+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Writing [[B@60788609] as "application/json"
+2026-05-26T06:57:50.884+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-05-26T06:57:50.888+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:50.888+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 73, 110, 118, 97, 108, 105, 100, 32, 117, 115, 101, 1 (truncated)...]
+2026-05-26T06:57:50.888+05:30 DEBUG 8356 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:54.256+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:54.257+05:30 DEBUG 8356 --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-26T06:57:54.258+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/login
+2026-05-26T06:57:54.258+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:54.259+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Writing [[B@8282793] as "application/json"
+2026-05-26T06:57:54.274+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-05-26T06:57:54.274+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:54.274+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 73, 110, 118, 97, 108, 105, 100, 32, 117, 115, 101, 1 (truncated)...]
+2026-05-26T06:57:54.274+05:30 DEBUG 8356 --- [nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:57.917+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:57.917+05:30 DEBUG 8356 --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.gateway.proxy.ApiProxyController#proxyUsers(HttpServletRequest)
+2026-05-26T06:57:57.917+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8081/api/users/login
+2026-05-26T06:57:57.917+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Accept=[application/octet-stream, application/json, application/*+json, */*]
+2026-05-26T06:57:57.917+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Writing [[B@6630d8ef] as "application/json"
+2026-05-26T06:57:57.954+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.client.RestTemplate              : Response 400 BAD_REQUEST
+2026-05-26T06:57:57.954+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Found 'Content-Type:application/json' in response
+2026-05-26T06:57:57.954+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{123, 34, 101, 114, 114, 111, 114, 34, 58, 34, 73, 110, 118, 97, 108, 105, 100, 32, 117, 115, 101, 1 (truncated)...]
+2026-05-26T06:57:57.954+05:30 DEBUG 8356 --- [nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST

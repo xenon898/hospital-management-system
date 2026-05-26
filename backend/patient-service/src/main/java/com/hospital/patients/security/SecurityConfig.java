@@ -24,6 +24,7 @@ public class SecurityConfig {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.GET, "/api/patients/me").hasRole("PATIENT")
+                        .requestMatchers(HttpMethod.GET, "/api/patients/my-prescriptions").hasRole("PATIENT")
                         .requestMatchers("/api/patients").hasRole("ADMIN")
                         .anyRequest().denyAll()
                 )

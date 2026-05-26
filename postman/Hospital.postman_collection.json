@@ -1,32 +1,12 @@
 {
   "info": {
-    "name": "Hospital Management System (Microservices)",
+    "name": "Hospital Management System (Admin Account Workflow)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": "Postman collection for testing localhost microservices via API Gateway. Base URL: http://localhost:8080"
+    "description": "Postman collection for testing localhost microservices through the API Gateway. Public registration is disabled; use the default admin to create doctor and patient accounts."
   },
   "item": [
     {
-      "name": "Register User (User Service via Gateway)",
-      "request": {
-        "method": "POST",
-        "header": [
-          { "key": "Content-Type", "value": "application/json" }
-        ],
-        "url": {
-          "raw": "http://localhost:8080/api/users/register",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "8080",
-          "path": ["api", "users", "register"]
-        },
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"username\": \"admin1\",\n  \"password\": \"Admin@123\",\n  \"role\": \"ADMIN\"\n}"
-        }
-      }
-    },
-    {
-      "name": "Login User (Get JWT)",
+      "name": "Login Default Admin",
       "request": {
         "method": "POST",
         "header": [
@@ -41,10 +21,51 @@
         },
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"username\": \"admin1\",\n  \"password\": \"Admin@123\"\n}"
+          "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Admin Creates Doctor Account and Profile",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer ADMIN_TOKEN" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/users/admin/create-doctor",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "users", "admin", "create-doctor"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo_doctor_01\",\n  \"password\": \"doctor123\",\n  \"name\": \"Dr Sharma\",\n  \"specialization\": \"Cardiology\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Admin Creates Patient Account and Profile",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer ADMIN_TOKEN" }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/api/users/admin/create-patient",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "users", "admin", "create-patient"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"demo_patient_01\",\n  \"password\": \"patient123\",\n  \"name\": \"Rahul Kumar\",\n  \"age\": 25,\n  \"phone\": \"9876543210\"\n}"
         }
       }
     }
   ]
 }
-

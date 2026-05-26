@@ -1,6 +1,8 @@
+C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\config\RestTemplateConfig.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\controller\GlobalExceptionHandler.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\controller\PatientController.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\dto\PatientProfileDto.java
+C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\dto\PrescriptionDto.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\entity\PatientProfile.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\PatientServiceApplication.java
 C:\Users\Mrigank\Desktop\hosptal\backend\patient-service\src\main\java\com\hospital\patients\repository\PatientProfileRepository.java

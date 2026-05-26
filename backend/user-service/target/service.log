@@ -8,59 +8,51 @@
 
  :: Spring Boot ::                (v3.3.2)
 
-2026-05-24T10:42:11.692+05:30  INFO 23588 --- [           main] c.hospital.users.UserServiceApplication  : Starting UserServiceApplication using Java 18.0.2.1 with PID 23588 (C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal)
-2026-05-24T10:42:11.696+05:30  INFO 23588 --- [           main] c.hospital.users.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
-2026-05-24T10:42:11.697+05:30 DEBUG 23588 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.users.UserServiceApplication
-2026-05-24T10:42:11.870+05:30 DEBUG 23588 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@766653e6
-2026-05-24T10:42:13.089+05:30  INFO 23588 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-24T10:42:13.113+05:30 DEBUG 23588 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.users'. Automatic @Repository and @Entity scanning is enabled.
-2026-05-24T10:42:13.160+05:30  INFO 23588 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
-2026-05-24T10:42:14.433+05:30 DEBUG 23588 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar
-2026-05-24T10:42:14.435+05:30 DEBUG 23588 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar
-2026-05-24T10:42:14.436+05:30 DEBUG 23588 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-05-24T10:42:14.478+05:30  INFO 23588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2026-05-24T10:42:14.501+05:30  INFO 23588 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-24T10:42:14.502+05:30  INFO 23588 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2026-05-24T10:42:14.562+05:30  INFO 23588 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-05-24T10:42:14.563+05:30 DEBUG 23588 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-05-24T10:42:14.564+05:30  INFO 23588 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2694 ms
-2026-05-24T10:42:14.597+05:30 DEBUG 23588 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2026-05-24T10:42:14.598+05:30 DEBUG 23588 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-05-24T10:42:14.629+05:30 DEBUG 23588 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2026-05-24T10:42:14.634+05:30 DEBUG 23588 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-05-24T10:42:14.635+05:30 DEBUG 23588 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
-2026-05-24T10:42:14.635+05:30 DEBUG 23588 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2026-05-24T10:42:14.825+05:30  INFO 23588 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-24T10:42:14.936+05:30  INFO 23588 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2026-05-24T10:42:15.010+05:30  INFO 23588 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-24T10:42:15.727+05:30  INFO 23588 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-24T10:42:15.797+05:30  INFO 23588 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-24T10:42:16.383+05:30  INFO 23588 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4239262e
-2026-05-24T10:42:16.390+05:30  INFO 23588 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-24T10:42:18.462+05:30  INFO 23588 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-24T10:42:18.544+05:30 DEBUG 23588 --- [           main] org.hibernate.SQL                        : create table app_users (id bigint generated by default as identity, password_hash varchar(255) not null, role varchar(255) not null check (role in ('ADMIN','DOCTOR','PATIENT')), username varchar(255) not null, primary key (id))
-Hibernate: create table app_users (id bigint generated by default as identity, password_hash varchar(255) not null, role varchar(255) not null check (role in ('ADMIN','DOCTOR','PATIENT')), username varchar(255) not null, primary key (id))
-2026-05-24T10:42:18.561+05:30 DEBUG 23588 --- [           main] org.hibernate.SQL                        : alter table if exists app_users drop constraint if exists UKspsnwr241e9k9c8p5xl4k45ih
-Hibernate: alter table if exists app_users drop constraint if exists UKspsnwr241e9k9c8p5xl4k45ih
-2026-05-24T10:42:18.566+05:30  WARN 23588 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
-2026-05-24T10:42:18.566+05:30  WARN 23588 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "ukspsnwr241e9k9c8p5xl4k45ih" of relation "app_users" does not exist, skipping
-2026-05-24T10:42:18.567+05:30 DEBUG 23588 --- [           main] org.hibernate.SQL                        : alter table if exists app_users add constraint UKspsnwr241e9k9c8p5xl4k45ih unique (username)
-Hibernate: alter table if exists app_users add constraint UKspsnwr241e9k9c8p5xl4k45ih unique (username)
-2026-05-24T10:42:18.573+05:30  INFO 23588 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-24T10:42:19.345+05:30  WARN 23588 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-24T10:42:19.481+05:30  WARN 23588 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2026-05-25T21:02:43.299+05:30  INFO 9676 --- [           main] c.hospital.users.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.10 with PID 9676 (C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal\backend\user-service)
+2026-05-25T21:02:43.317+05:30  INFO 9676 --- [           main] c.hospital.users.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T21:02:43.319+05:30 DEBUG 9676 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.users.UserServiceApplication
+2026-05-25T21:02:43.542+05:30 DEBUG 9676 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d7fc27
+2026-05-25T21:02:46.837+05:30  INFO 9676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25T21:02:46.964+05:30 DEBUG 9676 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.users'. Automatic @Repository and @Entity scanning is enabled.
+2026-05-25T21:02:47.097+05:30  INFO 9676 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interface.
+2026-05-25T21:02:49.249+05:30 DEBUG 9676 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar
+2026-05-25T21:02:49.249+05:30 DEBUG 9676 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar
+2026-05-25T21:02:49.249+05:30 DEBUG 9676 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-05-25T21:02:49.296+05:30  INFO 9676 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-05-25T21:02:49.336+05:30  INFO 9676 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T21:02:49.336+05:30  INFO 9676 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-05-25T21:02:49.499+05:30  INFO 9676 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T21:02:49.499+05:30 DEBUG 9676 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-05-25T21:02:49.524+05:30  INFO 9676 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5957 ms
+2026-05-25T21:02:49.653+05:30 DEBUG 9676 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2026-05-25T21:02:49.655+05:30 DEBUG 9676 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-05-25T21:02:50.000+05:30 DEBUG 9676 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2026-05-25T21:02:50.076+05:30 DEBUG 9676 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-05-25T21:02:50.077+05:30 DEBUG 9676 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-05-25T21:02:50.078+05:30 DEBUG 9676 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2026-05-25T21:02:50.651+05:30  INFO 9676 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-25T21:02:51.048+05:30  INFO 9676 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-05-25T21:02:51.720+05:30  INFO 9676 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-25T21:02:52.786+05:30  INFO 9676 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25T21:02:52.834+05:30  INFO 9676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-25T21:02:53.553+05:30  INFO 9676 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cd7d5e1
+2026-05-25T21:02:53.558+05:30  INFO 9676 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-25T21:02:56.025+05:30  INFO 9676 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-25T21:02:56.170+05:30  INFO 9676 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25T21:02:57.804+05:30  WARN 9676 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25T21:02:58.197+05:30  WARN 9676 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 0b523985-7e37-476c-ad0c-c2328d6cd3f3
+Using generated security password: abecbc83-0b22-4c52-8d85-175e8ae6a2d5
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-24T10:42:19.561+05:30  INFO 23588 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-24T10:42:19.975+05:30 DEBUG 23588 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2026-05-24T10:42:20.161+05:30 DEBUG 23588 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-05-24T10:42:20.498+05:30 DEBUG 23588 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-05-24T10:42:20.676+05:30 DEBUG 23588 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-05-24T10:42:21.362+05:30  INFO 23588 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2026-05-24T10:42:21.416+05:30 DEBUG 23588 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-05-25T21:02:58.234+05:30  INFO 9676 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-25T21:02:58.979+05:30 DEBUG 9676 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2026-05-25T21:02:59.240+05:30 DEBUG 9676 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-25T21:03:00.196+05:30 DEBUG 9676 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-25T21:03:00.294+05:30 DEBUG 9676 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-25T21:03:00.869+05:30  INFO 9676 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-05-25T21:03:00.896+05:30 DEBUG 9676 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -1194,297 +1186,136 @@ Unconditional classes:
 
 
 
-2026-05-24T10:42:21.426+05:30  INFO 23588 --- [           main] c.hospital.users.UserServiceApplication  : Started UserServiceApplication in 10.515 seconds (process running for 11.613)
-2026-05-24T10:42:21.438+05:30 DEBUG 23588 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-05-24T10:42:21.441+05:30 DEBUG 23588 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-05-24T10:43:41.860+05:30  INFO 23588 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-24T10:43:41.860+05:30  INFO 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-24T10:43:41.860+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-05-24T10:43:41.861+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-05-24T10:43:41.861+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2026-05-24T10:43:41.863+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dd847a2
-2026-05-24T10:43:41.864+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7dc963be
-2026-05-24T10:43:41.864+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-05-24T10:43:41.864+05:30  INFO 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2026-05-24T10:43:41.886+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:43:41.886+05:30 DEBUG 23588 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:43:41.980+05:30 DEBUG 23588 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@aad1991]
-2026-05-24T10:43:42.161+05:30 DEBUG 23588 --- [nio-8081-exec-1] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:03:00.912+05:30  INFO 9676 --- [           main] c.hospital.users.UserServiceApplication  : Started UserServiceApplication in 18.763 seconds (process running for 20.692)
+2026-05-25T21:03:00.918+05:30 DEBUG 9676 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-05-25T21:03:00.918+05:30 DEBUG 9676 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-05-25T21:03:51.297+05:30  INFO 9676 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T21:03:51.312+05:30  INFO 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@25762f04
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@da5b46f
+2026-05-25T21:03:51.312+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-05-25T21:03:51.312+05:30  INFO 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-25T21:03:51.343+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.343+05:30 DEBUG 9676 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:03:51.422+05:30 DEBUG 9676 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@46bab0a]
+2026-05-25T21:03:51.593+05:30 DEBUG 9676 --- [nio-8081-exec-1] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:43:56.496+05:30 DEBUG 23588 --- [nio-8081-exec-1] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:03:51.712+05:30 DEBUG 9676 --- [nio-8081-exec-1] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:43:56.657+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:43:56.660+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@7aa50034]
-2026-05-24T10:43:56.669+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:43:56.704+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:43:56.705+05:30 DEBUG 23588 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:43:56.706+05:30 DEBUG 23588 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@2bff1e7]
-2026-05-24T10:43:56.708+05:30 DEBUG 23588 --- [nio-8081-exec-5] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:03:51.844+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:51.844+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@15069aa]
+2026-05-25T21:03:51.844+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:51.894+05:30 DEBUG 9676 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.894+05:30 DEBUG 9676 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:03:51.894+05:30 DEBUG 9676 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@67dad21a]
+2026-05-25T21:03:51.894+05:30 DEBUG 9676 --- [nio-8081-exec-2] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:43:56.782+05:30 DEBUG 23588 --- [nio-8081-exec-5] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:03:51.960+05:30 DEBUG 9676 --- [nio-8081-exec-2] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:43:56.784+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:43:56.784+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@744c29f2]
-2026-05-24T10:43:56.785+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:43:56.794+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:43:56.794+05:30 DEBUG 23588 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:43:56.794+05:30 DEBUG 23588 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@69586b47]
-2026-05-24T10:43:56.794+05:30 DEBUG 23588 --- [nio-8081-exec-8] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:03:51.960+05:30 DEBUG 9676 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:51.960+05:30 DEBUG 9676 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@6752ba2f]
+2026-05-25T21:03:51.960+05:30 DEBUG 9676 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:51.981+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:03:51.981+05:30 DEBUG 9676 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:03:51.981+05:30 DEBUG 9676 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@114b7ae0]
+2026-05-25T21:03:51.981+05:30 DEBUG 9676 --- [nio-8081-exec-5] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:43:56.867+05:30 DEBUG 23588 --- [nio-8081-exec-8] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:03:52.044+05:30 DEBUG 9676 --- [nio-8081-exec-5] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:43:56.870+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:43:56.871+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@443e026a]
-2026-05-24T10:43:56.872+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:44:39.887+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:44:39.890+05:30 DEBUG 23588 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:44:39.891+05:30 DEBUG 23588 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@6c968869]
-2026-05-24T10:44:39.893+05:30 DEBUG 23588 --- [nio-8081-exec-9] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:03:52.061+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:52.061+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@41f96197]
+2026-05-25T21:03:52.062+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:08:54.561+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:08:54.561+05:30 DEBUG 9676 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:08:54.561+05:30 DEBUG 9676 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@4fa447d9]
+2026-05-25T21:08:54.561+05:30 DEBUG 9676 --- [nio-8081-exec-9] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:44:39.965+05:30 DEBUG 23588 --- [nio-8081-exec-9] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:08:54.631+05:30 DEBUG 9676 --- [nio-8081-exec-9] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:44:39.967+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:44:39.968+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@789d725d]
-2026-05-24T10:44:39.969+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:44:39.978+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:44:39.979+05:30 DEBUG 23588 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:44:39.980+05:30 DEBUG 23588 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@77851dec]
-2026-05-24T10:44:39.981+05:30 DEBUG 23588 --- [nio-8081-exec-2] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:08:54.633+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:08:54.634+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@616821cc]
+2026-05-25T21:08:54.634+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.240+05:30 DEBUG 9676 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.240+05:30 DEBUG 9676 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:09:35.240+05:30 DEBUG 9676 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@7f8c619e]
+2026-05-25T21:09:35.240+05:30 DEBUG 9676 --- [nio-8081-exec-3] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:44:40.045+05:30 DEBUG 23588 --- [nio-8081-exec-2] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:09:35.311+05:30 DEBUG 9676 --- [nio-8081-exec-3] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:44:40.045+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:44:40.045+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@1dafd509]
-2026-05-24T10:44:40.045+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:44:40.060+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:44:40.061+05:30 DEBUG 23588 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:44:40.062+05:30 DEBUG 23588 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@5b6bd21c]
-2026-05-24T10:44:40.063+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:09:35.311+05:30 DEBUG 9676 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.311+05:30 DEBUG 9676 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@434a01b5]
+2026-05-25T21:09:35.311+05:30 DEBUG 9676 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.419+05:30 DEBUG 9676 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.419+05:30 DEBUG 9676 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:09:35.419+05:30 DEBUG 9676 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@422e043c]
+2026-05-25T21:09:35.419+05:30 DEBUG 9676 --- [nio-8081-exec-4] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:44:40.122+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:09:35.490+05:30 DEBUG 9676 --- [nio-8081-exec-4] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:44:40.122+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:44:40.122+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@152151f2]
-2026-05-24T10:44:40.122+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:09.653+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:49:09.653+05:30 DEBUG 23588 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:49:09.653+05:30 DEBUG 23588 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@411bae74]
-2026-05-24T10:49:09.653+05:30 DEBUG 23588 --- [nio-8081-exec-7] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:09:35.490+05:30 DEBUG 9676 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.490+05:30 DEBUG 9676 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@7fc43489]
+2026-05-25T21:09:35.490+05:30 DEBUG 9676 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.506+05:30 DEBUG 9676 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-25T21:09:35.506+05:30 DEBUG 9676 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-25T21:09:35.506+05:30 DEBUG 9676 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@264b37df]
+2026-05-25T21:09:35.506+05:30 DEBUG 9676 --- [nio-8081-exec-7] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:49:09.741+05:30 DEBUG 23588 --- [nio-8081-exec-7] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-25T21:09:35.573+05:30 DEBUG 9676 --- [nio-8081-exec-7] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:49:09.745+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:09.745+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@323dab6b]
-2026-05-24T10:49:09.747+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:09.764+05:30 DEBUG 23588 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:49:09.765+05:30 DEBUG 23588 --- [io-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:49:09.766+05:30 DEBUG 23588 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@c0a0c00]
-2026-05-24T10:49:09.768+05:30 DEBUG 23588 --- [io-8081-exec-10] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
+2026-05-25T21:09:35.576+05:30 DEBUG 9676 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.576+05:30 DEBUG 9676 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@69917c68]
+2026-05-25T21:09:35.577+05:30 DEBUG 9676 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:38:39.890+05:30  WARN 9676 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h23m16s239ms861µs501ns).
+2026-05-26T06:54:43.090+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
+2026-05-26T06:54:43.090+05:30 DEBUG 9676 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
+2026-05-26T06:54:43.090+05:30 DEBUG 9676 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@38c7cb15]
+2026-05-26T06:54:43.090+05:30 DEBUG 9676 --- [nio-8081-exec-1] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
 Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:49:09.836+05:30 DEBUG 23588 --- [io-8081-exec-10] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
+2026-05-26T06:54:43.278+05:30 DEBUG 9676 --- [nio-8081-exec-1] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
 Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:49:09.839+05:30 DEBUG 23588 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:09.839+05:30 DEBUG 23588 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@8903a6d]
-2026-05-24T10:49:09.840+05:30 DEBUG 23588 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:09.851+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T10:49:09.852+05:30 DEBUG 23588 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T10:49:09.853+05:30 DEBUG 23588 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@10b34946]
-2026-05-24T10:49:09.854+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T10:49:09.918+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T10:49:09.918+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:09.918+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@4c53493e]
-2026-05-24T10:49:09.918+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:10.596+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/users/me", parameters={}
-2026-05-24T10:49:10.596+05:30 DEBUG 23588 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#me(String)
-2026-05-24T10:49:10.638+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:10.654+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.UserMeResponse@1c4557ca]
-2026-05-24T10:49:10.655+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:18:45.496+05:30  WARN 23588 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h22m18s846ms79µs500ns).
-2026-05-24T14:41:59.647+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:41:59.647+05:30 DEBUG 23588 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:41:59.647+05:30 DEBUG 23588 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@20331408]
-2026-05-24T14:41:59.680+05:30 DEBUG 23588 --- [nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:41:59.680+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:41:59.680+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=username is required}]
-2026-05-24T14:41:59.680+05:30 DEBUG 23588 --- [nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] ]
-2026-05-24T14:41:59.697+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:42:02.696+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:42:02.697+05:30 DEBUG 23588 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:42:02.699+05:30 DEBUG 23588 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@3eb76c40]
-2026-05-24T14:42:02.703+05:30 DEBUG 23588 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:42:02.703+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:42:02.703+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=username is required}]
-2026-05-24T14:42:02.703+05:30 DEBUG 23588 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] ]
-2026-05-24T14:42:02.703+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:42:04.864+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:42:04.864+05:30 DEBUG 23588 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:42:04.867+05:30 DEBUG 23588 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@3a7832a5]
-2026-05-24T14:42:04.868+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:42:04.868+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:42:04.868+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=username is required}]
-2026-05-24T14:42:04.868+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] ]
-2026-05-24T14:42:04.874+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:42:26.719+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:42:26.719+05:30  WARN 23588 --- [nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2026-05-24T14:42:26.719+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
-2026-05-24T14:43:04.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:43:04.364+05:30 DEBUG 23588 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:43:04.379+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest): JSON parse error: Unexpected character ('u' (code 117)): was expecting double-quote to start field name
-2026-05-24T14:43:04.380+05:30  WARN 23588 --- [nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('u' (code 117)): was expecting double-quote to start field name]
-2026-05-24T14:43:04.381+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:43:20.641+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:43:20.641+05:30 DEBUG 23588 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:43:20.641+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest): JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start field name
-2026-05-24T14:43:20.641+05:30  WARN 23588 --- [nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('\' (code 92)): was expecting double-quote to start field name]
-2026-05-24T14:43:20.641+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:46:06.060+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:46:06.060+05:30 DEBUG 23588 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:46:06.067+05:30 DEBUG 23588 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@18031068]
-2026-05-24T14:46:06.067+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T14:46:06.161+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T14:46:06.177+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:46:06.177+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@dc921e6]
-2026-05-24T14:46:06.177+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:47:29.267+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:47:29.267+05:30  WARN 23588 --- [nio-8081-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2026-05-24T14:47:29.272+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
-2026-05-24T14:47:35.532+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:47:35.532+05:30 DEBUG 23588 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:47:35.532+05:30 DEBUG 23588 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@3c20cd45]
-2026-05-24T14:47:35.538+05:30 DEBUG 23588 --- [nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:47:35.539+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:47:35.540+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=role is required}]
-2026-05-24T14:47:35.542+05:30 DEBUG 23588 --- [nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] ]
-2026-05-24T14:47:35.543+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:50:14.929+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:50:14.930+05:30 DEBUG 23588 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:50:14.935+05:30 DEBUG 23588 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@1c24e367]
-2026-05-24T14:50:14.935+05:30 DEBUG 23588 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:50:14.944+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:50:14.946+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=username is required}]
-2026-05-24T14:50:14.951+05:30 DEBUG 23588 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] ]
-2026-05-24T14:50:14.962+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:52:49.122+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@40d8ff7b]
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=password is required}]
-2026-05-24T14:52:49.123+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest) with 3 errors: [Field error in object 'registerRequest' on field 'password': rejected value [null]; codes [NotBlank.registerRequest.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.password,password]; arguments []; default message [password]]; default message [password is required]] [Field error in object 'registerRequest' on field 'username': rejected value [null]; codes [NotBlank.registerRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.username,username]; arguments []; default message [username]]; default message [username is required]] [Field error in object 'registerRequest' on field 'role': rejected value [null]; codes [NotNull.registerRequest.role,NotNull.role,NotNull.com.hospital.users.entity.Role,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerRequest.role,role]; arguments []; default message [role]]; default message [role is required]] ]
-2026-05-24T14:52:49.132+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T14:53:36.356+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:53:36.356+05:30 DEBUG 23588 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:53:36.362+05:30 DEBUG 23588 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@1d4a4288]
-2026-05-24T14:53:36.366+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T14:53:36.502+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T14:53:36.507+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:53:36.507+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@75cebc3c]
-2026-05-24T14:53:36.507+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:56:13.867+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:56:13.869+05:30  WARN 23588 --- [nio-8081-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2026-05-24T14:56:13.870+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
-2026-05-24T14:58:28.743+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/users/register", parameters={}
-2026-05-24T14:58:28.744+05:30  WARN 23588 --- [nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
-2026-05-24T14:58:28.745+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
-2026-05-24T14:59:07.750+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T14:59:07.755+05:30 DEBUG 23588 --- [nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T14:59:07.758+05:30 DEBUG 23588 --- [nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@3de0453a]
-2026-05-24T14:59:07.762+05:30 DEBUG 23588 --- [nio-8081-exec-1] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T14:59:07.910+05:30 DEBUG 23588 --- [nio-8081-exec-1] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T14:59:07.914+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T14:59:07.914+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@6363d5a6]
-2026-05-24T14:59:07.921+05:30 DEBUG 23588 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:00:45.826+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:00:45.826+05:30 DEBUG 23588 --- [nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:00:45.830+05:30 DEBUG 23588 --- [nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@2464decf]
-2026-05-24T15:00:45.831+05:30 DEBUG 23588 --- [nio-8081-exec-8] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:00:45.947+05:30 DEBUG 23588 --- [nio-8081-exec-8] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:00:45.947+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:00:45.947+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@59f4e3af]
-2026-05-24T15:00:45.947+05:30 DEBUG 23588 --- [nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:08:13.731+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:08:13.732+05:30 DEBUG 23588 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:08:13.736+05:30 DEBUG 23588 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@45dc463d]
-2026-05-24T15:08:13.739+05:30 DEBUG 23588 --- [nio-8081-exec-2] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:08:13.870+05:30 DEBUG 23588 --- [nio-8081-exec-2] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:08:13.870+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:08:13.870+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@6c62e20b]
-2026-05-24T15:08:13.880+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:09:56.352+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:09:56.352+05:30 DEBUG 23588 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:09:56.356+05:30 DEBUG 23588 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@1d38ac9f]
-2026-05-24T15:09:56.359+05:30 DEBUG 23588 --- [nio-8081-exec-6] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:09:56.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
-2026-05-24T15:09:56.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:09:56.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Username already exists}]
-2026-05-24T15:09:56.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Username already exists]
-2026-05-24T15:09:56.363+05:30 DEBUG 23588 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:10:11.376+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:10:11.377+05:30 DEBUG 23588 --- [nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:10:11.378+05:30 DEBUG 23588 --- [nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@8fd7b6c]
-2026-05-24T15:10:11.380+05:30 DEBUG 23588 --- [nio-8081-exec-7] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:10:11.490+05:30 DEBUG 23588 --- [nio-8081-exec-7] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:10:11.494+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:10:11.495+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@6a21260f]
-2026-05-24T15:10:11.496+05:30 DEBUG 23588 --- [nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:14:18.778+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:14:18.778+05:30 DEBUG 23588 --- [nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:14:18.778+05:30 DEBUG 23588 --- [nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@153f4b5]
-2026-05-24T15:14:18.778+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:14:18.894+05:30 DEBUG 23588 --- [nio-8081-exec-4] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:14:18.894+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:14:18.894+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@466caac4]
-2026-05-24T15:14:18.894+05:30 DEBUG 23588 --- [nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:23:28.404+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:23:28.404+05:30 DEBUG 23588 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:23:28.404+05:30 DEBUG 23588 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@39e98d92]
-2026-05-24T15:23:28.404+05:30 DEBUG 23588 --- [nio-8081-exec-5] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:23:28.518+05:30 DEBUG 23588 --- [nio-8081-exec-5] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:23:28.530+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:23:28.531+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@50c64abe]
-2026-05-24T15:23:28.533+05:30 DEBUG 23588 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T15:28:46.861+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:28:46.862+05:30 DEBUG 23588 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:28:46.864+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.hospital.users.dto.AuthResponse> com.hospital.users.controller.UserController.register(com.hospital.users.dto.RegisterRequest): JSON parse error: Unrecognized token 'PATIENT_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
-2026-05-24T15:28:46.864+05:30  WARN 23588 --- [nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'PATIENT_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
-2026-05-24T15:28:46.864+05:30 DEBUG 23588 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:29:07.596+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:29:07.597+05:30 DEBUG 23588 --- [nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:29:07.598+05:30 DEBUG 23588 --- [nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@4be08299]
-2026-05-24T15:29:07.598+05:30 DEBUG 23588 --- [nio-8081-exec-2] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:29:07.607+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
-2026-05-24T15:29:07.608+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:29:07.609+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Username already exists}]
-2026-05-24T15:29:07.610+05:30 DEBUG 23588 --- [nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Username already exists]
-2026-05-24T15:29:07.611+05:30 DEBUG 23588 --- [nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:29:15.798+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/users/register", parameters={}
-2026-05-24T15:29:15.798+05:30 DEBUG 23588 --- [nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#register(RegisterRequest)
-2026-05-24T15:29:15.798+05:30 DEBUG 23588 --- [nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.RegisterRequest@22d69ff6]
-2026-05-24T15:29:15.805+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-Hibernate: select au1_0.id from app_users au1_0 where au1_0.username=? fetch first ? rows only
-2026-05-24T15:29:15.912+05:30 DEBUG 23588 --- [nio-8081-exec-3] org.hibernate.SQL                        : insert into app_users (password_hash,role,username) values (?,?,?) returning id
-Hibernate: insert into app_users (password_hash,role,username) values (?,?,?) returning id
-2026-05-24T15:29:15.912+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:29:15.912+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@57d13f82]
-2026-05-24T15:29:15.921+05:30 DEBUG 23588 --- [nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T16:41:13.521+05:30  WARN 23588 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s445ms973µs600ns).
+2026-05-26T06:54:43.299+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:54:43.299+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hospital.users.dto.AuthResponse@33b02e16]
+2026-05-26T06:54:43.299+05:30 DEBUG 9676 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:45.226+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:45.226+05:30 DEBUG 9676 --- [nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#login(LoginRequest)
+2026-05-26T06:57:45.241+05:30 DEBUG 9676 --- [nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.LoginRequest@4718b516]
+2026-05-26T06:57:45.278+05:30 DEBUG 9676 --- [nio-8081-exec-5] org.hibernate.SQL                        : select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+Hibernate: select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+2026-05-26T06:57:45.297+05:30 DEBUG 9676 --- [nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
+2026-05-26T06:57:45.297+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:45.312+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid username or password}]
+2026-05-26T06:57:45.314+05:30 DEBUG 9676 --- [nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Invalid username or password]
+2026-05-26T06:57:45.314+05:30 DEBUG 9676 --- [nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:50.862+05:30 DEBUG 9676 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:50.863+05:30 DEBUG 9676 --- [nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#login(LoginRequest)
+2026-05-26T06:57:50.863+05:30 DEBUG 9676 --- [nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.LoginRequest@61a0e923]
+2026-05-26T06:57:50.863+05:30 DEBUG 9676 --- [nio-8081-exec-6] org.hibernate.SQL                        : select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+Hibernate: select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+2026-05-26T06:57:50.880+05:30 DEBUG 9676 --- [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
+2026-05-26T06:57:50.881+05:30 DEBUG 9676 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:50.882+05:30 DEBUG 9676 --- [nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid username or password}]
+2026-05-26T06:57:50.884+05:30 DEBUG 9676 --- [nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Invalid username or password]
+2026-05-26T06:57:50.884+05:30 DEBUG 9676 --- [nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:54.263+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:54.264+05:30 DEBUG 9676 --- [nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#login(LoginRequest)
+2026-05-26T06:57:54.265+05:30 DEBUG 9676 --- [nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.LoginRequest@5a58af5b]
+2026-05-26T06:57:54.265+05:30 DEBUG 9676 --- [nio-8081-exec-9] org.hibernate.SQL                        : select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+Hibernate: select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+2026-05-26T06:57:54.272+05:30 DEBUG 9676 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
+2026-05-26T06:57:54.273+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:54.274+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid username or password}]
+2026-05-26T06:57:54.274+05:30 DEBUG 9676 --- [nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Invalid username or password]
+2026-05-26T06:57:54.274+05:30 DEBUG 9676 --- [nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2026-05-26T06:57:57.933+05:30 DEBUG 9676 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/users/login", parameters={}
+2026-05-26T06:57:57.933+05:30 DEBUG 9676 --- [io-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.users.controller.UserController#login(LoginRequest)
+2026-05-26T06:57:57.933+05:30 DEBUG 9676 --- [io-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.users.dto.LoginRequest@1e5880b0]
+2026-05-26T06:57:57.948+05:30 DEBUG 9676 --- [io-8081-exec-10] org.hibernate.SQL                        : select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+Hibernate: select au1_0.id,au1_0.password_hash,au1_0.role,au1_0.username from app_users au1_0 where au1_0.username=?
+2026-05-26T06:57:57.954+05:30 DEBUG 9676 --- [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hospital.users.controller.GlobalExceptionHandler#handleBadRequest(IllegalArgumentException)
+2026-05-26T06:57:57.954+05:30 DEBUG 9676 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:57.954+05:30 DEBUG 9676 --- [io-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{error=Invalid username or password}]
+2026-05-26T06:57:57.954+05:30 DEBUG 9676 --- [io-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Invalid username or password]
+2026-05-26T06:57:57.954+05:30 DEBUG 9676 --- [io-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST

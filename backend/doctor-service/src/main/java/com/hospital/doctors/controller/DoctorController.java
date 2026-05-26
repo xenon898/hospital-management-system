@@ -55,5 +55,11 @@ public class DoctorController {
     public List<PrescriptionDto> getPatientHistory(@PathVariable("patientId") Long patientId) {
         return doctorService.getPatientHistory(patientId);
     }
+
+    /** PATIENT SERVICE: fetch prescriptions after Patient Service verifies the logged-in patient profile. */
+    @GetMapping("/internal/patient-prescriptions/{patientId}")
+    public List<PrescriptionDto> getPatientPrescriptions(@PathVariable("patientId") Long patientId) {
+        return doctorService.getPatientHistory(patientId);
+    }
 }
 

@@ -2,12 +2,20 @@ package com.hospital.users.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 public class SecurityConfig {
+
+    private final com.hospital.users.security.JwtAuthFilter jwtAuthFilter;
+
+    public SecurityConfig(com.hospital.users.security.JwtAuthFilter jwtAuthFilter) {
+        this.jwtAuthFilter = jwtAuthFilter;
+    }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -15,12 +23,16 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/users/register", "/api/users/login", "/api/users/me").permitAll()
+                        .requestMatchers("/api/users/login").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/users/admin/create-doctor").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/users/admin/create-patient").hasRole("ADMIN")
+                        .requestMatchers("/api/users/me").authenticated()
                         .anyRequest().denyAll()
                 )
                 .httpBasic(basic -> basic.disable())
                 .formLogin(form -> form.disable());
 
+        http.addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 }

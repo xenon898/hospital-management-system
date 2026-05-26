@@ -1,6 +1,7 @@
 package com.hospital.patients.controller;
 
 import com.hospital.patients.dto.PatientProfileDto;
+import com.hospital.patients.dto.PrescriptionDto;
 import com.hospital.patients.service.PatientService;
 import jakarta.validation.Valid;
 import org.springframework.security.core.Authentication;
@@ -35,6 +36,14 @@ public class PatientController {
     public PatientProfileDto getMyProfile(Authentication authentication) {
         Long userId = Long.valueOf(authentication.getName());
         return patientService.getMyProfile(userId);
+    }
+
+    /** PATIENT: prescriptions written for the logged-in patient's profile. */
+    @GetMapping("/my-prescriptions")
+    public List<PrescriptionDto> getMyPrescriptions(Authentication authentication,
+                                                    @RequestHeader("Authorization") String authorization) {
+        Long userId = Long.valueOf(authentication.getName());
+        return patientService.getMyPrescriptions(userId, authorization);
     }
 }
 

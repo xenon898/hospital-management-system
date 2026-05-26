@@ -8,51 +8,51 @@
 
  :: Spring Boot ::                (v3.3.2)
 
-2026-05-24T10:48:12.546+05:30  INFO 7848 --- [           main] c.h.doctors.DoctorServiceApplication     : Starting DoctorServiceApplication using Java 18.0.2.1 with PID 7848 (C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal)
-2026-05-24T10:48:12.549+05:30  INFO 7848 --- [           main] c.h.doctors.DoctorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
-2026-05-24T10:48:12.550+05:30 DEBUG 7848 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.doctors.DoctorServiceApplication
-2026-05-24T10:48:12.732+05:30 DEBUG 7848 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@563e4951
-2026-05-24T10:48:14.308+05:30  INFO 7848 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-24T10:48:14.343+05:30 DEBUG 7848 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.doctors'. Automatic @Repository and @Entity scanning is enabled.
-2026-05-24T10:48:14.412+05:30  INFO 7848 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
-2026-05-24T10:48:15.746+05:30 DEBUG 7848 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar
-2026-05-24T10:48:15.747+05:30 DEBUG 7848 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar
-2026-05-24T10:48:15.748+05:30 DEBUG 7848 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
-2026-05-24T10:48:15.772+05:30  INFO 7848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
-2026-05-24T10:48:15.786+05:30  INFO 7848 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-05-24T10:48:15.787+05:30  INFO 7848 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2026-05-24T10:48:15.841+05:30  INFO 7848 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-05-24T10:48:15.841+05:30 DEBUG 7848 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2026-05-24T10:48:15.841+05:30  INFO 7848 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3109 ms
-2026-05-24T10:48:15.876+05:30 DEBUG 7848 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthFilter urls=[/*] order=2147483647
-2026-05-24T10:48:15.876+05:30 DEBUG 7848 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2026-05-24T10:48:15.939+05:30 DEBUG 7848 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
-2026-05-24T10:48:15.948+05:30 DEBUG 7848 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
-2026-05-24T10:48:15.949+05:30 DEBUG 7848 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
-2026-05-24T10:48:15.950+05:30 DEBUG 7848 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
-2026-05-24T10:48:16.244+05:30  INFO 7848 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-24T10:48:16.497+05:30  INFO 7848 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2026-05-24T10:48:16.614+05:30  INFO 7848 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-05-24T10:48:17.459+05:30  INFO 7848 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-24T10:48:17.534+05:30  INFO 7848 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-05-24T10:48:17.975+05:30  INFO 7848 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b2ef50e
-2026-05-24T10:48:17.979+05:30  INFO 7848 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-05-24T10:48:19.892+05:30  INFO 7848 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-24T10:48:19.958+05:30  INFO 7848 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-24T10:48:20.705+05:30  WARN 7848 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-24T10:48:20.762+05:30  WARN 7848 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+2026-05-25T21:02:43.214+05:30  INFO 10788 --- [           main] c.h.doctors.DoctorServiceApplication     : Starting DoctorServiceApplication using Java 21.0.10 with PID 10788 (C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar started by Mrigank in C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service)
+2026-05-25T21:02:43.243+05:30  INFO 10788 --- [           main] c.h.doctors.DoctorServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T21:02:43.250+05:30 DEBUG 10788 --- [           main] o.s.boot.SpringApplication               : Loading source class com.hospital.doctors.DoctorServiceApplication
+2026-05-25T21:02:43.453+05:30 DEBUG 10788 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cbd9d24
+2026-05-25T21:02:46.726+05:30  INFO 10788 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25T21:02:46.788+05:30 DEBUG 10788 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.hospital.doctors'. Automatic @Repository and @Entity scanning is enabled.
+2026-05-25T21:02:47.054+05:30  INFO 10788 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310 ms. Found 2 JPA repository interfaces.
+2026-05-25T21:02:49.163+05:30 DEBUG 10788 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar
+2026-05-25T21:02:49.163+05:30 DEBUG 10788 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : Code archive: C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar
+2026-05-25T21:02:49.166+05:30 DEBUG 10788 --- [           main] .s.b.w.e.t.TomcatServletWebServerFactory : None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+2026-05-25T21:02:49.232+05:30  INFO 10788 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-05-25T21:02:49.277+05:30  INFO 10788 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T21:02:49.277+05:30  INFO 10788 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-05-25T21:02:49.365+05:30  INFO 10788 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T21:02:49.365+05:30 DEBUG 10788 --- [           main] w.s.c.ServletWebServerApplicationContext : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2026-05-25T21:02:49.365+05:30  INFO 10788 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5912 ms
+2026-05-25T21:02:49.490+05:30 DEBUG 10788 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthFilter urls=[/*] order=2147483647
+2026-05-25T21:02:49.491+05:30 DEBUG 10788 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2026-05-25T21:02:49.666+05:30 DEBUG 10788 --- [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2026-05-25T21:02:49.683+05:30 DEBUG 10788 --- [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2026-05-25T21:02:49.683+05:30 DEBUG 10788 --- [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2026-05-25T21:02:49.683+05:30 DEBUG 10788 --- [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2026-05-25T21:02:50.429+05:30  INFO 10788 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-25T21:02:50.711+05:30  INFO 10788 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-05-25T21:02:50.882+05:30  INFO 10788 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-25T21:02:52.645+05:30  INFO 10788 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25T21:02:52.699+05:30  INFO 10788 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-25T21:02:53.724+05:30  INFO 10788 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6dded900
+2026-05-25T21:02:53.727+05:30  INFO 10788 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-25T21:02:56.159+05:30  INFO 10788 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-25T21:02:56.329+05:30  INFO 10788 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25T21:02:58.893+05:30  WARN 10788 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25T21:02:59.095+05:30  WARN 10788 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 7d7f1f58-8671-47e0-929e-9c4be65a2a39
+Using generated security password: 27837e8c-ad1c-4cf7-b8df-e280010ea8e4
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2026-05-24T10:48:20.793+05:30  INFO 7848 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2026-05-24T10:48:21.092+05:30 DEBUG 7848 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
-2026-05-24T10:48:21.242+05:30 DEBUG 7848 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-05-24T10:48:21.442+05:30 DEBUG 7848 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-05-24T10:48:21.496+05:30 DEBUG 7848 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-05-24T10:48:21.709+05:30  INFO 7848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
-2026-05-24T10:48:21.745+05:30 DEBUG 7848 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-05-25T21:02:59.168+05:30  INFO 10788 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-25T21:02:59.737+05:30 DEBUG 10788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2026-05-25T21:03:00.174+05:30 DEBUG 10788 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-05-25T21:03:00.626+05:30 DEBUG 10788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-05-25T21:03:00.723+05:30 DEBUG 10788 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-05-25T21:03:01.148+05:30  INFO 10788 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-05-25T21:03:01.180+05:30 DEBUG 10788 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 
 ============================
@@ -1186,72 +1186,116 @@ Unconditional classes:
 
 
 
-2026-05-24T10:48:21.763+05:30  INFO 7848 --- [           main] c.h.doctors.DoctorServiceApplication     : Started DoctorServiceApplication in 10.006 seconds (process running for 10.61)
-2026-05-24T10:48:21.766+05:30 DEBUG 7848 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2026-05-24T10:48:21.769+05:30 DEBUG 7848 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2026-05-24T10:49:09.996+05:30  INFO 7848 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-05-24T10:49:09.996+05:30  INFO 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c57ca10
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@89178b4
-2026-05-24T10:49:09.996+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2026-05-24T10:49:09.996+05:30  INFO 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2026-05-24T10:49:10.292+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T10:49:10.294+05:30 DEBUG 7848 --- [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
-2026-05-24T10:49:10.377+05:30 DEBUG 7848 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.DoctorProfileDto@20497f82]
-2026-05-24T10:49:10.455+05:30 DEBUG 7848 --- [nio-8082-exec-1] org.hibernate.SQL                        : insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
+2026-05-25T21:03:01.183+05:30  INFO 10788 --- [           main] c.h.doctors.DoctorServiceApplication     : Started DoctorServiceApplication in 19.088 seconds (process running for 20.966)
+2026-05-25T21:03:01.185+05:30 DEBUG 10788 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2026-05-25T21:03:01.189+05:30 DEBUG 10788 --- [           main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2026-05-25T21:03:52.265+05:30  INFO 10788 --- [nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T21:03:52.265+05:30  INFO 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T21:03:52.266+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-05-25T21:03:52.266+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2026-05-25T21:03:52.266+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2026-05-25T21:03:52.267+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@742aa00a
+2026-05-25T21:03:52.267+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f465ae
+2026-05-25T21:03:52.268+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-05-25T21:03:52.268+05:30  INFO 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-25T21:03:52.410+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-25T21:03:52.410+05:30 DEBUG 10788 --- [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
+2026-05-25T21:03:52.477+05:30 DEBUG 10788 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.DoctorProfileDto@e36629a]
+2026-05-25T21:03:52.565+05:30 DEBUG 10788 --- [nio-8082-exec-2] org.hibernate.SQL                        : insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
 Hibernate: insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
-2026-05-24T10:49:10.538+05:30 DEBUG 7848 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:10.538+05:30 DEBUG 7848 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@4b2db1cb]
-2026-05-24T10:49:10.555+05:30 DEBUG 7848 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:10.657+05:30 DEBUG 7848 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/me", parameters={}
-2026-05-24T10:49:10.657+05:30 DEBUG 7848 --- [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getMyProfile(Authentication)
-2026-05-24T10:49:10.789+05:30 DEBUG 7848 --- [nio-8082-exec-2] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
+2026-05-25T21:03:52.610+05:30 DEBUG 10788 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:52.610+05:30 DEBUG 10788 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@1666ad28]
+2026-05-25T21:03:52.625+05:30 DEBUG 10788 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.755+05:30 DEBUG 10788 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors/prescriptions", parameters={}
+2026-05-25T21:03:53.755+05:30 DEBUG 10788 --- [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#addPrescription(PrescriptionCreateRequest, Authentication)
+2026-05-25T21:03:53.755+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.PrescriptionCreateRequest@19a0770b]
+2026-05-25T21:03:53.865+05:30 DEBUG 10788 --- [nio-8082-exec-1] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
 Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
-2026-05-24T10:49:10.796+05:30 DEBUG 7848 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:10.796+05:30 DEBUG 7848 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@1b74c03b]
-2026-05-24T10:49:10.797+05:30 DEBUG 7848 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:11.634+05:30 DEBUG 7848 --- [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors/prescriptions", parameters={}
-2026-05-24T10:49:11.634+05:30 DEBUG 7848 --- [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#addPrescription(PrescriptionCreateRequest, Authentication)
-2026-05-24T10:49:11.634+05:30 DEBUG 7848 --- [nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.PrescriptionCreateRequest@54f6e315]
-2026-05-24T10:49:11.634+05:30 DEBUG 7848 --- [nio-8082-exec-6] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
-Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
-2026-05-24T10:49:11.634+05:30 DEBUG 7848 --- [nio-8082-exec-6] org.hibernate.SQL                        : insert into prescriptions (appointment_id,content,created_at,doctor_id,patient_id) values (?,?,?,?,?) returning id
+2026-05-25T21:03:53.865+05:30 DEBUG 10788 --- [nio-8082-exec-1] org.hibernate.SQL                        : insert into prescriptions (appointment_id,content,created_at,doctor_id,patient_id) values (?,?,?,?,?) returning id
 Hibernate: insert into prescriptions (appointment_id,content,created_at,doctor_id,patient_id) values (?,?,?,?,?) returning id
-2026-05-24T10:49:11.650+05:30 DEBUG 7848 --- [nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:11.650+05:30 DEBUG 7848 --- [nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.PrescriptionDto@75d13784]
-2026-05-24T10:49:11.650+05:30 DEBUG 7848 --- [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T10:49:11.666+05:30 DEBUG 7848 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/patient-history/2", parameters={}
-2026-05-24T10:49:11.671+05:30 DEBUG 7848 --- [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getPatientHistory(Long)
-2026-05-24T10:49:11.677+05:30 DEBUG 7848 --- [nio-8082-exec-9] org.hibernate.SQL                        : select p1_0.id,p1_0.appointment_id,p1_0.content,p1_0.created_at,p1_0.doctor_id,p1_0.patient_id from prescriptions p1_0 where p1_0.patient_id=? order by p1_0.created_at desc
+2026-05-25T21:03:53.882+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:53.882+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.PrescriptionDto@4176762]
+2026-05-25T21:03:53.882+05:30 DEBUG 10788 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/patient-history/4", parameters={}
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getPatientHistory(Long)
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] org.hibernate.SQL                        : select p1_0.id,p1_0.appointment_id,p1_0.content,p1_0.created_at,p1_0.doctor_id,p1_0.patient_id from prescriptions p1_0 where p1_0.patient_id=? order by p1_0.created_at desc
 Hibernate: select p1_0.id,p1_0.appointment_id,p1_0.content,p1_0.created_at,p1_0.doctor_id,p1_0.patient_id from prescriptions p1_0 where p1_0.patient_id=? order by p1_0.created_at desc
-2026-05-24T10:49:11.682+05:30 DEBUG 7848 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T10:49:11.682+05:30 DEBUG 7848 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.PrescriptionDto@5d9b7407]]
-2026-05-24T10:49:11.685+05:30 DEBUG 7848 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T14:19:07.015+05:30  WARN 7848 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h22m18s826ms931µs700ns).
-2026-05-24T15:02:55.408+05:30 DEBUG 7848 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:02:55.415+05:30 DEBUG 7848 --- [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
-2026-05-24T15:02:55.506+05:30 DEBUG 7848 --- [io-8082-exec-10] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.hospital.doctors.dto.DoctorProfileDto com.hospital.doctors.controller.DoctorController.createDoctor(com.hospital.doctors.dto.DoctorProfileDto): JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
-2026-05-24T15:02:55.543+05:30  WARN 7848 --- [io-8082-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
-2026-05-24T15:02:55.549+05:30 DEBUG 7848 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:12:35.067+05:30 DEBUG 7848 --- [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:12:35.067+05:30 DEBUG 7848 --- [nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
-2026-05-24T15:12:35.079+05:30 DEBUG 7848 --- [nio-8082-exec-4] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.hospital.doctors.dto.DoctorProfileDto com.hospital.doctors.controller.DoctorController.createDoctor(com.hospital.doctors.dto.DoctorProfileDto): JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
-2026-05-24T15:12:35.079+05:30  WARN 7848 --- [nio-8082-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
-2026-05-24T15:12:35.079+05:30 DEBUG 7848 --- [nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:20:44.964+05:30 DEBUG 7848 --- [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:20:44.964+05:30 DEBUG 7848 --- [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
-2026-05-24T15:20:44.964+05:30 DEBUG 7848 --- [nio-8082-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.hospital.doctors.dto.DoctorProfileDto com.hospital.doctors.controller.DoctorController.createDoctor(com.hospital.doctors.dto.DoctorProfileDto): JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
-2026-05-24T15:20:44.964+05:30  WARN 7848 --- [nio-8082-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'DOCTOR_USER_ID': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
-2026-05-24T15:20:44.964+05:30 DEBUG 7848 --- [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2026-05-24T15:23:54.819+05:30 DEBUG 7848 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
-2026-05-24T15:23:54.820+05:30 DEBUG 7848 --- [nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
-2026-05-24T15:23:54.825+05:30 DEBUG 7848 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.DoctorProfileDto@76a763bd]
-2026-05-24T15:23:54.869+05:30 DEBUG 7848 --- [nio-8082-exec-2] org.hibernate.SQL                        : insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.PrescriptionDto@2b697e31]]
+2026-05-25T21:03:53.897+05:30 DEBUG 10788 --- [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.579+05:30 DEBUG 10788 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.DoctorProfileDto@102a038b]
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] org.hibernate.SQL                        : insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
 Hibernate: insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
-2026-05-24T15:23:56.515+05:30 DEBUG 7848 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2026-05-24T15:23:56.516+05:30 DEBUG 7848 --- [nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@75b68f4b]
-2026-05-24T15:23:56.519+05:30 DEBUG 7848 --- [nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2026-05-24T16:41:05.094+05:30  WARN 7848 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s440ms870µs701ns).
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@5685aacb]
+2026-05-25T21:09:35.593+05:30 DEBUG 10788 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.660+05:30 DEBUG 10788 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors/prescriptions", parameters={}
+2026-05-25T21:09:35.660+05:30 DEBUG 10788 --- [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#addPrescription(PrescriptionCreateRequest, Authentication)
+2026-05-25T21:09:35.676+05:30 DEBUG 10788 --- [io-8082-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.PrescriptionCreateRequest@2d3d5b1e]
+2026-05-25T21:09:35.677+05:30 DEBUG 10788 --- [io-8082-exec-10] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0 where dp1_0.user_id=?
+2026-05-25T21:09:35.677+05:30 DEBUG 10788 --- [io-8082-exec-10] org.hibernate.SQL                        : insert into prescriptions (appointment_id,content,created_at,doctor_id,patient_id) values (?,?,?,?,?) returning id
+Hibernate: insert into prescriptions (appointment_id,content,created_at,doctor_id,patient_id) values (?,?,?,?,?) returning id
+2026-05-25T21:09:35.677+05:30 DEBUG 10788 --- [io-8082-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.677+05:30 DEBUG 10788 --- [io-8082-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.PrescriptionDto@5f683322]
+2026-05-25T21:09:35.677+05:30 DEBUG 10788 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors/patient-history/5", parameters={}
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getPatientHistory(Long)
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] org.hibernate.SQL                        : select p1_0.id,p1_0.appointment_id,p1_0.content,p1_0.created_at,p1_0.doctor_id,p1_0.patient_id from prescriptions p1_0 where p1_0.patient_id=? order by p1_0.created_at desc
+Hibernate: select p1_0.id,p1_0.appointment_id,p1_0.content,p1_0.created_at,p1_0.doctor_id,p1_0.patient_id from prescriptions p1_0 where p1_0.patient_id=? order by p1_0.created_at desc
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.PrescriptionDto@5a6f91f0]]
+2026-05-25T21:09:35.693+05:30 DEBUG 10788 --- [nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:38:40.099+05:30  WARN 10788 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h23m16s244ms946µs500ns).
+2026-05-26T06:54:43.336+05:30 DEBUG 10788 --- [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:54:43.337+05:30 DEBUG 10788 --- [nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:54:43.347+05:30 DEBUG 10788 --- [nio-8082-exec-7] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:54:43.354+05:30 DEBUG 10788 --- [nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:54:43.355+05:30 DEBUG 10788 --- [nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@18c0d808, com.hospital.doctors.dto.DoctorProfileDto@6bc5d (truncated)...]
+2026-05-26T06:54:43.357+05:30 DEBUG 10788 --- [nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:54:43.704+05:30 DEBUG 10788 --- [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:54:43.704+05:30 DEBUG 10788 --- [nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:54:43.720+05:30 DEBUG 10788 --- [nio-8082-exec-8] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:54:43.730+05:30 DEBUG 10788 --- [nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:54:43.732+05:30 DEBUG 10788 --- [nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@7aff911d, com.hospital.doctors.dto.DoctorProfileDto@2036e (truncated)...]
+2026-05-26T06:54:43.736+05:30 DEBUG 10788 --- [nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:25.935+05:30 DEBUG 10788 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/doctors", parameters={}
+2026-05-26T06:56:25.936+05:30 DEBUG 10788 --- [nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#createDoctor(DoctorProfileDto)
+2026-05-26T06:56:25.938+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.hospital.doctors.dto.DoctorProfileDto@7f21bffb]
+2026-05-26T06:56:25.940+05:30 DEBUG 10788 --- [nio-8082-exec-1] org.hibernate.SQL                        : insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
+Hibernate: insert into doctor_profiles (name,specialization,user_id) values (?,?,?) returning id
+2026-05-26T06:56:25.944+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:56:25.945+05:30 DEBUG 10788 --- [nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [com.hospital.doctors.dto.DoctorProfileDto@31c56953]
+2026-05-26T06:56:25.946+05:30 DEBUG 10788 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:26.195+05:30 DEBUG 10788 --- [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:56:26.195+05:30 DEBUG 10788 --- [nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:56:26.212+05:30 DEBUG 10788 --- [nio-8082-exec-5] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:56:26.217+05:30 DEBUG 10788 --- [nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:56:26.217+05:30 DEBUG 10788 --- [nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@8e0550, com.hospital.doctors.dto.DoctorProfileDto@5f9a20b (truncated)...]
+2026-05-26T06:56:26.217+05:30 DEBUG 10788 --- [nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:56:49.788+05:30 DEBUG 10788 --- [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:56:49.788+05:30 DEBUG 10788 --- [nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:56:49.804+05:30 DEBUG 10788 --- [nio-8082-exec-6] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:56:49.811+05:30 DEBUG 10788 --- [nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:56:49.811+05:30 DEBUG 10788 --- [nio-8082-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@4a429b9c, com.hospital.doctors.dto.DoctorProfileDto@4298f (truncated)...]
+2026-05-26T06:56:49.811+05:30 DEBUG 10788 --- [nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:11.027+05:30 DEBUG 10788 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:57:11.028+05:30 DEBUG 10788 --- [nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:57:11.031+05:30 DEBUG 10788 --- [nio-8082-exec-9] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:57:11.035+05:30 DEBUG 10788 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:11.036+05:30 DEBUG 10788 --- [nio-8082-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@1aa5aaf0, com.hospital.doctors.dto.DoctorProfileDto@1a8c2 (truncated)...]
+2026-05-26T06:57:11.039+05:30 DEBUG 10788 --- [nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-05-26T06:57:13.523+05:30 DEBUG 10788 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/doctors", parameters={}
+2026-05-26T06:57:13.523+05:30 DEBUG 10788 --- [io-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hospital.doctors.controller.DoctorController#getAllDoctors()
+2026-05-26T06:57:13.537+05:30 DEBUG 10788 --- [io-8082-exec-10] org.hibernate.SQL                        : select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+Hibernate: select dp1_0.id,dp1_0.name,dp1_0.specialization,dp1_0.user_id from doctor_profiles dp1_0
+2026-05-26T06:57:13.545+05:30 DEBUG 10788 --- [io-8082-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-05-26T06:57:13.545+05:30 DEBUG 10788 --- [io-8082-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[com.hospital.doctors.dto.DoctorProfileDto@ba628a9, com.hospital.doctors.dto.DoctorProfileDto@daeb6e (truncated)...]
+2026-05-26T06:57:13.545+05:30 DEBUG 10788 --- [io-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
