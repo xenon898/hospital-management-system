@@ -5,12 +5,14 @@ import { Empty, Loader, Notice, Panel, Stat, Status } from "./Ui";
 export default function DoctorDashboard({ session, activePage }) {
   const [profile, setProfile] = useState(null);
   const [appointments, setAppointments] = useState([]);
-  const [prescription, setPrescription] = useState({ appointmentId: "", patientId: "", content: "" });
+  const [prescription, setPrescription] = useState({ appointmentId: "", content: "" });
   const [historyId, setHistoryId] = useState("");
   const [history, setHistory] = useState([]);
   const [historyLoaded, setHistoryLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState("");
   const [feedback, setFeedback] = useState(null);
+  const completedAppointments = appointments.filter((item) => item.status === "COMPLETED");
 
   async function refresh() {
     setLoading(true);
@@ -32,6 +34,8 @@ export default function DoctorDashboard({ session, activePage }) {
   }, []);
 
   async function setStatus(appointmentId, status) {
+    if (!window.confirm(`Update appointment #${appointmentId} to ${status}?`)) return;
+    setSaving(`status-${appointmentId}`);
     try {
       await request(`/appointments/${appointmentId}/status`, {
         token: session.token,
@@ -42,30 +46,35 @@ export default function DoctorDashboard({ session, activePage }) {
       setAppointments(await request("/appointments/doctor", { token: session.token }));
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving("");
     }
   }
 
   async function savePrescription(event) {
     event.preventDefault();
+    setSaving("prescription");
     try {
       const saved = await request("/doctors/prescriptions", {
         token: session.token,
         method: "POST",
         body: {
           appointmentId: Number(prescription.appointmentId),
-          patientId: Number(prescription.patientId),
           content: prescription.content
         }
       });
       setFeedback({ type: "success", text: `Prescription #${saved.id} recorded successfully.` });
-      setPrescription({ appointmentId: "", patientId: "", content: "" });
+      setPrescription({ appointmentId: "", content: "" });
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving("");
     }
   }
 
   async function searchHistory(event) {
     event.preventDefault();
+    setSaving("history");
     try {
       const records = await request(`/doctors/patient-history/${historyId}`, { token: session.token });
       setHistory(records);
@@ -73,6 +82,8 @@ export default function DoctorDashboard({ session, activePage }) {
       setFeedback(null);
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving("");
     }
   }
 
@@ -100,18 +111,21 @@ export default function DoctorDashboard({ session, activePage }) {
         {loading ? <Loader /> : appointments.length === 0 ? <Empty>No appointments found</Empty> : (
           <div className="table-wrap">
             <table>
-              <thead><tr><th>ID</th><th>Patient User ID</th><th>Date and time</th><th>Status</th><th>Action</th></tr></thead>
+              <thead><tr><th>ID</th><th>Patient</th><th>Date and time</th><th>Status</th><th>Action</th></tr></thead>
               <tbody>
                 {appointments.map((item) => (
                   <tr key={item.id}>
                     <td>#{item.id}</td>
-                    <td>{item.patientId}</td>
+                    <td>
+                      <strong>{item.patientName || `Patient #${item.patientId}`}</strong>
+                      <small className="table-subtext">User ID {item.patientId}</small>
+                    </td>
                     <td>{new Date(item.appointmentTime).toLocaleString()}</td>
                     <td><Status value={item.status} /></td>
                     <td className="actions">
-                      <button className="mini" onClick={() => setStatus(item.id, "CONFIRMED")}>Confirm</button>
-                      <button className="mini complete" onClick={() => setStatus(item.id, "COMPLETED")}>Complete</button>
-                      <button className="mini cancel" onClick={() => setStatus(item.id, "CANCELLED")}>Cancel</button>
+                      <button className="mini" disabled={item.status !== "PENDING" || saving === `status-${item.id}`} onClick={() => setStatus(item.id, "CONFIRMED")}>Confirm</button>
+                      <button className="mini complete" disabled={item.status !== "CONFIRMED" || saving === `status-${item.id}`} onClick={() => setStatus(item.id, "COMPLETED")}>Complete</button>
+                      <button className="mini cancel" disabled={["COMPLETED", "CANCELLED"].includes(item.status) || saving === `status-${item.id}`} onClick={() => setStatus(item.id, "CANCELLED")}>Cancel</button>
                     </td>
                   </tr>
                 ))}
@@ -124,21 +138,25 @@ export default function DoctorDashboard({ session, activePage }) {
 
       {activePage === "Prescription" && (
         <Panel className="page-panel" eyebrow="Treatment" title="Write prescription">
-          <p className="helper">Ask admin for the Patient Profile ID; it is different from the patient user ID shown above.</p>
           <form className="form-stack" onSubmit={savePrescription}>
             <label>
-              Appointment ID
-              <input required type="number" value={prescription.appointmentId} onChange={(e) => setPrescription({ ...prescription, appointmentId: e.target.value })} />
-            </label>
-            <label>
-              Patient Profile ID
-              <input required type="number" value={prescription.patientId} onChange={(e) => setPrescription({ ...prescription, patientId: e.target.value })} />
+              Completed appointment
+              <select required value={prescription.appointmentId} onChange={(e) => setPrescription({ ...prescription, appointmentId: e.target.value })}>
+                <option value="">Select completed appointment</option>
+                {completedAppointments.map((item) => (
+                  <option value={item.id} key={item.id}>
+                    #{item.id} - {item.patientName || `Patient User ID ${item.patientId}`} - {new Date(item.appointmentTime).toLocaleString()}
+                  </option>
+                ))}
+              </select>
             </label>
             <label>
               Prescription content
               <textarea required value={prescription.content} onChange={(e) => setPrescription({ ...prescription, content: e.target.value })} placeholder="Medication and care instructions" rows="4" />
             </label>
-            <button className="primary" type="submit">Save prescription</button>
+            <button className="primary" disabled={saving === "prescription" || !completedAppointments.length} type="submit">
+              {saving === "prescription" ? "Saving..." : "Save prescription"}
+            </button>
           </form>
         </Panel>
       )}
@@ -146,11 +164,11 @@ export default function DoctorDashboard({ session, activePage }) {
       {activePage === "History" && (
         <Panel className="page-panel" eyebrow="History" title="Patient prescriptions">
           <form className="inline-form" onSubmit={searchHistory}>
-            <input required type="number" value={historyId} onChange={(e) => setHistoryId(e.target.value)} placeholder="Patient Profile ID" />
-            <button className="secondary" type="submit">Search</button>
+            <input required type="number" value={historyId} onChange={(e) => setHistoryId(e.target.value)} placeholder="Patient User ID" />
+            <button className="secondary" disabled={saving === "history"} type="submit">{saving === "history" ? "Searching..." : "Search"}</button>
           </form>
           {!historyLoaded ? (
-            <Empty>Enter a Patient Profile ID to view medical advice history.</Empty>
+            <Empty>Enter a Patient User ID to view prescriptions you created for that patient.</Empty>
           ) : history.length === 0 ? (
             <Empty>No prescriptions found for this patient.</Empty>
           ) : (

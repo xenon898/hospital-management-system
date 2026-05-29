@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +26,13 @@ public class GlobalExceptionHandler {
         String msg = ex.getBindingResult().getAllErrors().isEmpty() ? "Validation failed" : ex.getBindingResult().getAllErrors().get(0).getDefaultMessage();
         body.put("error", msg);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
+    }
+
+    @ExceptionHandler(ResponseStatusException.class)
+    public ResponseEntity<Map<String, String>> handleStatus(ResponseStatusException ex) {
+        Map<String, String> body = new HashMap<>();
+        body.put("error", ex.getReason());
+        return ResponseEntity.status(ex.getStatusCode()).body(body);
     }
 }
 

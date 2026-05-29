@@ -3,8 +3,20 @@ package com.hospital.patients.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name = "patient_profiles")
+@Table(
+        name = "patient_profiles",
+        uniqueConstraints = {
+                @UniqueConstraint(name = "uk_patient_user", columnNames = "userId"),
+                @UniqueConstraint(name = "uk_patient_phone", columnNames = "phone")
+        },
+        indexes = {
+                @Index(name = "idx_patient_user_id", columnList = "userId"),
+                @Index(name = "idx_patient_phone", columnList = "phone")
+        }
+)
 @Getter
 @Setter
 @NoArgsConstructor
@@ -27,5 +39,23 @@ public class PatientProfile {
 
     @Column(length = 20)
     private String phone;
+
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
+    @Column(nullable = false)
+    private LocalDateTime updatedAt;
+
+    @PrePersist
+    public void prePersist() {
+        LocalDateTime now = LocalDateTime.now();
+        createdAt = now;
+        updatedAt = now;
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updatedAt = LocalDateTime.now();
+    }
 }
 

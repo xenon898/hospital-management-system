@@ -3,8 +3,16 @@ package com.hospital.users.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
-@Table(name = "app_users")
+@Table(
+        name = "app_users",
+        indexes = {
+                @Index(name = "idx_app_users_username", columnList = "username"),
+                @Index(name = "idx_app_users_role", columnList = "role")
+        }
+)
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,7 +24,7 @@ public class AppUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 60)
     private String username;
 
     @Column(nullable = false)
@@ -25,5 +33,23 @@ public class AppUser {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
+
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
+
+    @Column(nullable = false)
+    private LocalDateTime updatedAt;
+
+    @PrePersist
+    public void prePersist() {
+        LocalDateTime now = LocalDateTime.now();
+        createdAt = now;
+        updatedAt = now;
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updatedAt = LocalDateTime.now();
+    }
 }
 

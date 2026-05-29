@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { request } from "../api";
+import { ageValidationMessage, phoneValidationMessage, request } from "../api";
 import { Empty, Loader, Notice, Panel, Stat, Status } from "./Ui";
 
 const blankDoctor = { username: "", password: "", name: "", specialization: "" };
@@ -12,7 +12,11 @@ export default function AdminDashboard({ session, activePage }) {
   const [doctor, setDoctor] = useState(blankDoctor);
   const [patient, setPatient] = useState(blankPatient);
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState("");
   const [feedback, setFeedback] = useState(null);
+  const patientPhoneError = phoneValidationMessage(patient.phone);
+  const patientAge = patient.age === "" ? null : Number(patient.age);
+  const patientAgeError = ageValidationMessage(patient.age);
 
   async function refresh() {
     setLoading(true);
@@ -38,6 +42,7 @@ export default function AdminDashboard({ session, activePage }) {
 
   async function createDoctor(event) {
     event.preventDefault();
+    setSaving("doctor");
     try {
       const saved = await request("/users/admin/create-doctor", {
         token: session.token,
@@ -52,28 +57,37 @@ export default function AdminDashboard({ session, activePage }) {
       refresh();
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving("");
     }
   }
 
   async function createPatient(event) {
     event.preventDefault();
+    if (patientPhoneError || patientAgeError) {
+      setFeedback({ type: "error", text: patientPhoneError || patientAgeError });
+      return;
+    }
+    setSaving("patient");
     try {
       const saved = await request("/users/admin/create-patient", {
         token: session.token,
         method: "POST",
         body: {
           ...patient,
-          age: patient.age ? Number(patient.age) : null
+          age: patientAge
         }
       });
       setPatient(blankPatient);
       setFeedback({
         type: "success",
-        text: `Patient created. User ID ${saved.userId}, Profile ID ${saved.profileId}. Save the profile ID for prescriptions.`
+        text: `Patient created. User ID ${saved.userId}, Profile ID ${saved.profileId}.`
       });
       refresh();
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving("");
     }
   }
 
@@ -117,7 +131,9 @@ export default function AdminDashboard({ session, activePage }) {
               Specialization
               <input required value={doctor.specialization} onChange={(e) => setDoctor({ ...doctor, specialization: e.target.value })} placeholder="Cardiology" />
             </label>
-            <button className="primary span-two" type="submit">Create doctor account</button>
+            <button className="primary span-two" disabled={saving === "doctor"} type="submit">
+              {saving === "doctor" ? "Creating..." : "Create doctor account"}
+            </button>
           </form>
         </Panel>
 
@@ -138,13 +154,29 @@ export default function AdminDashboard({ session, activePage }) {
             </label>
             <label>
               Age
-              <input type="number" value={patient.age} onChange={(e) => setPatient({ ...patient, age: e.target.value })} />
+              <input
+                min="1"
+                max="120"
+                type="number"
+                value={patient.age}
+                onChange={(e) => setPatient({ ...patient, age: e.target.value })}
+              />
+              {patientAgeError && <small className="field-error">{patientAgeError}</small>}
             </label>
             <label>
               Phone
-              <input value={patient.phone} onChange={(e) => setPatient({ ...patient, phone: e.target.value })} placeholder="9876543210" />
+              <input
+                inputMode="numeric"
+                maxLength="10"
+                value={patient.phone}
+                onChange={(e) => setPatient({ ...patient, phone: e.target.value.replace(/\D/g, "") })}
+                placeholder="9876543210"
+              />
+              {patientPhoneError && <small className="field-error">{patientPhoneError}</small>}
             </label>
-            <button className="primary span-two" type="submit">Create patient account</button>
+            <button className="primary span-two" disabled={saving === "patient" || Boolean(patientPhoneError || patientAgeError)} type="submit">
+              {saving === "patient" ? "Creating..." : "Create patient account"}
+            </button>
           </form>
         </Panel>
       </div>
@@ -187,14 +219,20 @@ export default function AdminDashboard({ session, activePage }) {
           <div className="table-wrap">
             <table>
               <thead>
-                <tr><th>ID</th><th>Doctor User ID</th><th>Patient User ID</th><th>Time</th><th>Status</th></tr>
+                <tr><th>ID</th><th>Doctor</th><th>Patient</th><th>Time</th><th>Status</th></tr>
               </thead>
               <tbody>
                 {appointments.map((item) => (
                   <tr key={item.id}>
                     <td>#{item.id}</td>
-                    <td>{item.doctorId}</td>
-                    <td>{item.patientId}</td>
+                    <td>
+                      <strong>{item.doctorName || `Doctor #${item.doctorId}`}</strong>
+                      <small className="table-subtext">User ID {item.doctorId}</small>
+                    </td>
+                    <td>
+                      <strong>{item.patientName || `Patient #${item.patientId}`}</strong>
+                      <small className="table-subtext">User ID {item.patientId}</small>
+                    </td>
                     <td>{new Date(item.appointmentTime).toLocaleString()}</td>
                     <td><Status value={item.status} /></td>
                   </tr>

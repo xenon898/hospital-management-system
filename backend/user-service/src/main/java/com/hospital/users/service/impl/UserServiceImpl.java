@@ -75,8 +75,12 @@ public class UserServiceImpl implements UserService {
         if (request.getAge() != null) {
             profileBody.put("age", request.getAge());
         }
-        if (request.getPhone() != null && !request.getPhone().isBlank()) {
-            profileBody.put("phone", request.getPhone().trim());
+        String phone = request.getPhone() == null ? null : request.getPhone().trim();
+        if (phone != null && !phone.isBlank()) {
+            if (phone.chars().distinct().count() == 1 || "1234567890".equals(phone)) {
+                throw new IllegalArgumentException("Phone must be a realistic 10 digit mobile number");
+            }
+            profileBody.put("phone", phone);
         }
 
         ProfileCreateResponse profile = createProfile(
@@ -129,6 +133,9 @@ public class UserServiceImpl implements UserService {
 
     private AppUser createUser(String username, String password, Role role) {
         String cleanUsername = username == null ? "" : username.trim();
+        if (cleanUsername.isBlank()) {
+            throw new IllegalArgumentException("Username is required");
+        }
         if (appUserRepository.existsByUsername(cleanUsername)) {
             throw new IllegalArgumentException("Username already exists");
         }

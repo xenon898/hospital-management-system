@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { futureDateTime, request } from "../api";
+import { futureDateTime, minimumDateTime, request } from "../api";
 import { Empty, Loader, Notice, Panel, Stat, Status } from "./Ui";
 
 export default function PatientDashboard({ session, activePage }) {
@@ -8,7 +8,9 @@ export default function PatientDashboard({ session, activePage }) {
   const [appointments, setAppointments] = useState([]);
   const [prescriptions, setPrescriptions] = useState([]);
   const [booking, setBooking] = useState({ doctorId: "", appointmentTime: futureDateTime() });
+  const [editing, setEditing] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
   const [prescriptionsLoading, setPrescriptionsLoading] = useState(false);
   const [feedback, setFeedback] = useState(null);
 
@@ -61,6 +63,7 @@ export default function PatientDashboard({ session, activePage }) {
 
   async function book(event) {
     event.preventDefault();
+    setSaving(true);
     try {
       const saved = await request("/appointments", {
         token: session.token,
@@ -76,6 +79,38 @@ export default function PatientDashboard({ session, activePage }) {
       setAppointments(result);
     } catch (error) {
       setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  function beginEdit(item) {
+    setEditing({
+      id: item.id,
+      doctorId: String(item.doctorId),
+      appointmentTime: String(item.appointmentTime).slice(0, 16)
+    });
+  }
+
+  async function saveEdit(event) {
+    event.preventDefault();
+    setSaving(true);
+    try {
+      const saved = await request(`/appointments/${editing.id}`, {
+        token: session.token,
+        method: "PUT",
+        body: {
+          doctorId: Number(editing.doctorId),
+          appointmentTime: editing.appointmentTime
+        }
+      });
+      setFeedback({ type: "success", text: `Appointment #${saved.id} updated.` });
+      setEditing(null);
+      setAppointments(await request("/appointments/my", { token: session.token }));
+    } catch (error) {
+      setFeedback({ type: "error", text: error.message });
+    } finally {
+      setSaving(false);
     }
   }
 
@@ -133,26 +168,71 @@ export default function PatientDashboard({ session, activePage }) {
               <input
                 required
                 type="datetime-local"
+                min={minimumDateTime()}
                 value={booking.appointmentTime}
                 onChange={(e) => setBooking({ ...booking, appointmentTime: e.target.value })}
               />
             </label>
-            <button className="primary" disabled={!doctors.length} type="submit">Request appointment</button>
+            <button className="primary" disabled={!doctors.length || saving} type="submit">
+              {saving ? "Requesting..." : "Request appointment"}
+            </button>
           </form>
         </Panel>
+
+        {editing && (
+          <Panel className="page-panel" eyebrow="Edit request" title={`Reschedule appointment #${editing.id}`}>
+            <form className="form-stack" onSubmit={saveEdit}>
+              <label>
+                Choose doctor
+                <select required value={editing.doctorId} onChange={(e) => setEditing({ ...editing, doctorId: e.target.value })}>
+                  {doctors.map((doctor) => (
+                    <option value={doctor.userId} key={doctor.id}>{doctor.name} - {doctor.specialization}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Appointment date and time
+                <input
+                  required
+                  type="datetime-local"
+                  min={minimumDateTime()}
+                  value={editing.appointmentTime}
+                  onChange={(e) => setEditing({ ...editing, appointmentTime: e.target.value })}
+                />
+              </label>
+              <div className="actions">
+                <button className="primary" disabled={saving} type="submit">{saving ? "Saving..." : "Save changes"}</button>
+                <button className="ghost" onClick={() => setEditing(null)} type="button">Cancel edit</button>
+              </div>
+            </form>
+          </Panel>
+        )}
 
       <Panel className="page-panel" eyebrow="Appointments" title="My visit history">
         {loading ? <Loader /> : appointments.length === 0 ? <Empty>No appointments found</Empty> : (
           <div className="table-wrap">
             <table>
-              <thead><tr><th>Appointment</th><th>Doctor User ID</th><th>Date and time</th><th>Status</th></tr></thead>
+              <thead><tr><th>Appointment</th><th>Doctor</th><th>Date and time</th><th>Status</th><th>Action</th></tr></thead>
               <tbody>
                 {appointments.map((item) => (
                   <tr key={item.id}>
                     <td>#{item.id}</td>
-                    <td>{item.doctorId}</td>
+                    <td>
+                      <strong>{item.doctorName || `Doctor #${item.doctorId}`}</strong>
+                      <small className="table-subtext">User ID {item.doctorId}</small>
+                    </td>
                     <td>{new Date(item.appointmentTime).toLocaleString()}</td>
                     <td><Status value={item.status} /></td>
+                    <td>
+                      <button
+                        className="mini"
+                        disabled={item.status !== "PENDING"}
+                        onClick={() => beginEdit(item)}
+                        type="button"
+                      >
+                        Edit
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -174,7 +254,7 @@ export default function PatientDashboard({ session, activePage }) {
                     <small>{new Date(entry.createdAt).toLocaleString()}</small>
                   </div>
                   <p>{entry.content}</p>
-                  <small>Appointment #{entry.appointmentId} | Doctor Profile ID {entry.doctorId}</small>
+                  <small>Appointment #{entry.appointmentId} | Doctor User ID {entry.doctorId}</small>
                 </div>
               ))}
             </div>

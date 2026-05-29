@@ -6,7 +6,15 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "prescriptions")
+@Table(
+        name = "prescriptions",
+        uniqueConstraints = @UniqueConstraint(name = "uk_prescription_appointment", columnNames = "appointmentId"),
+        indexes = {
+                @Index(name = "idx_prescriptions_patient", columnList = "patientId"),
+                @Index(name = "idx_prescriptions_doctor", columnList = "doctorId"),
+                @Index(name = "idx_prescriptions_appointment", columnList = "appointmentId")
+        }
+)
 @Getter
 @Setter
 @NoArgsConstructor
@@ -18,7 +26,7 @@ public class Prescription {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** Kept as ids to avoid complex cross-service foreign keys. */
+    /** Kept as user ids to avoid complex cross-service foreign keys. */
     @Column(nullable = false)
     private Long appointmentId;
 
@@ -33,11 +41,20 @@ public class Prescription {
 
     private LocalDateTime createdAt;
 
+    private LocalDateTime updatedAt;
+
     @PrePersist
     public void prePersist() {
+        LocalDateTime now = LocalDateTime.now();
         if (createdAt == null) {
-            createdAt = LocalDateTime.now();
+            createdAt = now;
         }
+        updatedAt = now;
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        updatedAt = LocalDateTime.now();
     }
 }
 

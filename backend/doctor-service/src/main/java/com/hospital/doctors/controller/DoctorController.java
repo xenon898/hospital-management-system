@@ -5,9 +5,10 @@ import com.hospital.doctors.dto.PrescriptionCreateRequest;
 import com.hospital.doctors.dto.PrescriptionDto;
 import com.hospital.doctors.service.DoctorService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -43,23 +44,30 @@ public class DoctorController {
     /** DOCTOR: add prescription for patient. */
     @PostMapping("/prescriptions")
     public PrescriptionDto addPrescription(@RequestBody @Valid PrescriptionCreateRequest request,
+                                           @RequestHeader("Authorization") String authorization,
                                            Authentication authentication) {
-        // beginner note: treat doctorId as doctorProfile.id; here we simplify by using doctorId from profile lookup.
         Long userId = Long.valueOf(authentication.getName());
-        Long doctorId = doctorService.getMyProfile(userId).getId();
-        return doctorService.addPrescription(request, doctorId);
+        doctorService.getMyProfile(userId);
+        return doctorService.addPrescription(request, userId, authorization);
     }
 
     /** DOCTOR: view patient prescription history. */
     @GetMapping("/patient-history/{patientId}")
-    public List<PrescriptionDto> getPatientHistory(@PathVariable("patientId") Long patientId) {
-        return doctorService.getPatientHistory(patientId);
+    public List<PrescriptionDto> getPatientHistory(@PathVariable("patientId") Long patientId,
+                                                   Authentication authentication) {
+        Long doctorUserId = Long.valueOf(authentication.getName());
+        return doctorService.getPatientHistory(patientId, doctorUserId);
     }
 
-    /** PATIENT SERVICE: fetch prescriptions after Patient Service verifies the logged-in patient profile. */
+    /** PATIENT SERVICE: fetch prescriptions for the logged-in patient user only. */
     @GetMapping("/internal/patient-prescriptions/{patientId}")
-    public List<PrescriptionDto> getPatientPrescriptions(@PathVariable("patientId") Long patientId) {
-        return doctorService.getPatientHistory(patientId);
+    public List<PrescriptionDto> getPatientPrescriptions(@PathVariable("patientId") Long patientId,
+                                                         Authentication authentication) {
+        Long authenticatedPatientId = Long.valueOf(authentication.getName());
+        if (!authenticatedPatientId.equals(patientId)) {
+            throw new ResponseStatusException(HttpStatus.FORBIDDEN, "Patients can only access their own prescriptions");
+        }
+        return doctorService.getPatientPrescriptions(patientId);
     }
 }
 

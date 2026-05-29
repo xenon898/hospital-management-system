@@ -9,5 +9,7 @@ public interface DoctorProfileRepository extends JpaRepository<DoctorProfile, Lo
 
     Optional<DoctorProfile> findByUserId(Long userId);
 
+    boolean existsByUserId(Long userId);
+
 }
 

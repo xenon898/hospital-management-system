@@ -37,10 +37,10 @@ export default function AuthPage({ onAuthenticated }) {
           Admins prepare profiles, patients book visits, and doctors confirm
           care and add prescriptions through one connected workflow.
         </p>
-        <div className="flow">
-          <div><strong>1</strong><span>Admin creates profiles</span></div>
-          <div><strong>2</strong><span>Patient books a visit</span></div>
-          <div><strong>3</strong><span>Doctor records care</span></div>
+        <div className="hero-metrics">
+          <span>Secure roles</span>
+          <span>Owned records</span>
+          <span>Validated workflow</span>
         </div>
       </section>
 

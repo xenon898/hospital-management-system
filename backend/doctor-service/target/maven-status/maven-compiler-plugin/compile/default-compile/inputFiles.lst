@@ -1,6 +1,9 @@
+C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\config\RestTemplateConfig.java
+C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\config\SchemaMigration.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\controller\DoctorController.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\controller\GlobalExceptionHandler.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\DoctorServiceApplication.java
+C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\dto\AppointmentDto.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\dto\DoctorProfileDto.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\dto\PrescriptionCreateRequest.java
 C:\Users\Mrigank\Desktop\hosptal\backend\doctor-service\src\main\java\com\hospital\doctors\dto\PrescriptionDto.java

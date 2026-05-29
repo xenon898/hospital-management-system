@@ -5,6 +5,8 @@ import com.hospital.patients.dto.PrescriptionDto;
 import com.hospital.patients.entity.PatientProfile;
 import com.hospital.patients.repository.PatientProfileRepository;
 import com.hospital.patients.service.PatientService;
+import com.hospital.patients.validation.PhoneNumberValidator;
+import org.springframework.http.HttpStatus;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -35,11 +38,21 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public PatientProfileDto createPatient(PatientProfileDto dto) {
+        if (patientRepo.existsByUserId(dto.getUserId())) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Patient profile already exists for this user");
+        }
+        String phone = PhoneNumberValidator.normalize(dto.getPhone());
+        if (!PhoneNumberValidator.isValid(phone)) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, PhoneNumberValidator.message());
+        }
+        if (phone != null && !phone.isBlank() && patientRepo.existsByPhone(phone)) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Phone number already belongs to another patient");
+        }
         PatientProfile profile = PatientProfile.builder()
                 .userId(dto.getUserId())
-                .name(dto.getName())
+                .name(dto.getName().trim())
                 .age(dto.getAge())
-                .phone(dto.getPhone())
+                .phone(phone == null || phone.isBlank() ? null : phone)
                 .build();
 
         PatientProfile saved = patientRepo.save(profile);
@@ -70,7 +83,7 @@ public class PatientServiceImpl implements PatientService {
             HttpHeaders headers = new HttpHeaders();
             headers.set(HttpHeaders.AUTHORIZATION, authorization);
             ResponseEntity<List<PrescriptionDto>> response = restTemplate.exchange(
-                    doctorUrl + "/api/doctors/internal/patient-prescriptions/" + profile.getId(),
+                    doctorUrl + "/api/doctors/internal/patient-prescriptions/" + profile.getUserId(),
                     HttpMethod.GET,
                     new HttpEntity<>(headers),
                     new ParameterizedTypeReference<>() {

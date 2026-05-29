@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 public class AppointmentStatusUpdateRequest {
 
-    @NotNull
+    @NotNull(message = "status is required")
     private AppointmentStatus status;
 }
 

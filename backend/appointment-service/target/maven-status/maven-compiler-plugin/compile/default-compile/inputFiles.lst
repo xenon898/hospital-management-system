@@ -1,9 +1,14 @@
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\AppointmentServiceApplication.java
+C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\config\RestTemplateConfig.java
+C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\config\SchemaMigration.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\controller\AppointmentController.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\controller\GlobalExceptionHandler.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\AppointmentCreateRequest.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\AppointmentDto.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\AppointmentStatusUpdateRequest.java
+C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\AppointmentUpdateRequest.java
+C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\DoctorProfileDto.java
+C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\dto\PatientProfileDto.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\entity\Appointment.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\entity\AppointmentStatus.java
 C:\Users\Mrigank\Desktop\hosptal\backend\appointment-service\src\main\java\com\hospital\appointments\repository\AppointmentRepository.java

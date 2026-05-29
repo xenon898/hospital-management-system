@@ -14,8 +14,10 @@ public interface DoctorService {
 
     DoctorProfileDto getMyProfile(Long userId);
 
-    PrescriptionDto addPrescription(PrescriptionCreateRequest request, Long doctorId);
+    PrescriptionDto addPrescription(PrescriptionCreateRequest request, Long doctorUserId, String authorization);
 
-    List<PrescriptionDto> getPatientHistory(Long patientId);
+    List<PrescriptionDto> getPatientHistory(Long patientId, Long doctorUserId);
+
+    List<PrescriptionDto> getPatientPrescriptions(Long patientUserId);
 }
 

@@ -24,9 +24,11 @@ public class SecurityConfig {
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/api/appointments").hasRole("PATIENT")
+                        .requestMatchers(HttpMethod.PUT, "/api/appointments/*").hasRole("PATIENT")
                         .requestMatchers(HttpMethod.GET, "/api/appointments/my").hasRole("PATIENT")
                         .requestMatchers(HttpMethod.GET, "/api/appointments/doctor").hasRole("DOCTOR")
                         .requestMatchers(HttpMethod.PATCH, "/api/appointments/*/status").hasRole("DOCTOR")
+                        .requestMatchers(HttpMethod.GET, "/api/appointments/*").hasAnyRole("PATIENT", "DOCTOR", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/api/appointments").hasRole("ADMIN")
                         .anyRequest().denyAll()
                 )

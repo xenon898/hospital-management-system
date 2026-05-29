@@ -12,10 +12,10 @@ import java.time.LocalDateTime;
 public class AppointmentCreateRequest {
 
     /** User id of the doctor account, used by the doctor's authenticated appointment lookup. */
-    @NotNull
+    @NotNull(message = "doctorId is required")
     private Long doctorId;
 
-    @NotNull
+    @NotNull(message = "appointmentTime is required")
     @Future(message = "appointmentTime must be in the future")
     private LocalDateTime appointmentTime;
 }

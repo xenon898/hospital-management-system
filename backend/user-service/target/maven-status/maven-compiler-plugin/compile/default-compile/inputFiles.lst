@@ -1,6 +1,7 @@
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\config\AdminBootstrap.java
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\config\JwtProperties.java
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\config\RestTemplateConfig.java
+C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\config\SchemaMigration.java
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\config\SecurityConfig.java
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\controller\GlobalExceptionHandler.java
 C:\Users\Mrigank\Desktop\hosptal\backend\user-service\src\main\java\com\hospital\users\controller\UserController.java

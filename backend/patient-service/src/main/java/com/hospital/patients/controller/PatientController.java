@@ -38,6 +38,12 @@ public class PatientController {
         return patientService.getMyProfile(userId);
     }
 
+    /** Internal read model used by Appointment Service to show patient names. */
+    @GetMapping("/internal/by-user/{userId}")
+    public PatientProfileDto getPatientByUserId(@PathVariable("userId") Long userId) {
+        return patientService.getMyProfile(userId);
+    }
+
     /** PATIENT: prescriptions written for the logged-in patient's profile. */
     @GetMapping("/my-prescriptions")
     public List<PrescriptionDto> getMyPrescriptions(Authentication authentication,

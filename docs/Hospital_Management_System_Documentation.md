@@ -1,147 +1,84 @@
-# Hospital Management System
+# Hospital Management System Documentation
 
-## Project Documentation
+## 1. Project Summary
 
-**Project Type:** Full-stack application using React and Spring Boot Microservices  
-**Database:** PostgreSQL  
-**Testing Tool:** Web Interface and Postman  
-**Prepared By:** ____________________  
-**Submitted To:** ____________________  
-**Date:** ____________________
+CareBridge Hospital Management System is a React + Vite frontend with Spring Boot microservices, PostgreSQL databases, JWT authentication, and an API Gateway. The project now behaves as a role-protected hospital workflow instead of a simple CRUD demo.
 
----
-
-## 1. Introduction
-
-The Hospital Management System is a full-stack application for handling basic hospital activities:
-
-- Admin-controlled doctor and patient account creation
-- Doctor and patient login using JWT authentication
-- Doctor and patient profile management
-- Appointment booking and appointment status updates
-- Prescription creation and patient prescription history
-
-The application follows a microservices architecture. An API Gateway provides one common entry point for the React web interface and clients such as Postman.
-
-Public registration has been removed. This makes the workflow more production-like because doctors and patients cannot create their own accounts. A default admin account is created automatically when the backend starts, and the admin creates doctor and patient accounts.
-
----
-
-## 2. Objectives
-
-1. To manage three roles: Admin, Doctor, and Patient.
-2. To create a default admin account automatically for the local demo.
-3. To allow only Admin to create Doctor and Patient accounts.
-4. To securely access protected operations using JSON Web Tokens (JWT).
-5. To allow a patient to book an appointment with a doctor.
-6. To allow a doctor to view appointments, update appointment status, and create prescriptions.
-7. To store data using PostgreSQL databases.
-
----
-
-## 3. Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| Java 17 | Programming language |
-| Spring Boot 3.3.2 | Backend application framework |
-| Spring Web | REST API development |
-| Spring Security | Authentication and role authorization |
-| JWT / JJWT | Token-based authentication |
-| Spring Data JPA / Hibernate | Database mapping and operations |
-| PostgreSQL | Relational database |
-| Maven | Build and dependency management |
-| Lombok | Reduces boilerplate Java code |
-| React 18 | User interface for hospital workflows |
-| Vite 6 | Frontend build and development server |
-| Postman | API testing and demonstration |
-
----
-
-## 4. System Architecture
+Core workflow:
 
 ```text
-                    React Frontend / Postman Client
-                       Port 3000 / API Client
-                                |
-                                v
-                    API Gateway - Port 8080
-                  JWT validation and routing
-          _____________|______________|_______________
-         |             |              |               |
-         v             v              v               v
- User Service     Doctor Service  Patient Service  Appointment Service
- Port 8081        Port 8082       Port 8083       Port 8084
-     |                |              |               |
-     v                v              v               v
-  user_db          doctor_db      patient_db     appointment_db
+Admin creates doctor and patient
+        |
+Patient books appointment
+        |
+Patient may edit only while appointment is PENDING
+        |
+Doctor sees only assigned appointments
+        |
+Doctor confirms and completes appointment
+        |
+Doctor creates prescription for that completed appointment
+        |
+Patient sees only their own prescription
+        |
+Admin monitors all doctors, patients, and appointments
 ```
 
-| Service | Port | Database | Responsibility |
-|---|---:|---|---|
-| API Gateway | `8080` | None | Receives client requests, validates tokens, checks roles, and forwards calls |
-| User Service | `8081` | `user_db` | Logs users in, creates default admin, and provides admin-only account creation |
-| Doctor Service | `8082` | `doctor_db` | Manages doctor profiles and prescriptions |
-| Patient Service | `8083` | `patient_db` | Manages patient profiles |
-| Appointment Service | `8084` | `appointment_db` | Manages appointment booking, viewing, and status changes |
+## 2. Root Cause Analysis
 
-All Postman and frontend calls should go through:
+Before the enterprise upgrade, the main issues were:
+
+- Appointment updates accepted an appointment ID without checking whether the logged-in doctor owned that appointment.
+- Appointment booking did not check doctor slot conflicts, duplicate patient bookings, or invalid business state changes.
+- Prescription creation trusted frontend-provided `patientId`, so the wrong patient could receive a prescription if the ID was entered incorrectly.
+- Appointment data used patient user IDs, while prescription flow expected patient profile IDs. That mismatch caused synchronization and mapping bugs.
+- Patient phone numbers were optional and weakly validated, allowing repeated digits, unrealistic numbers, and duplicates.
+- Some APIs returned inconsistent error shapes and relied on broad `IllegalArgumentException` handling.
+- Frontend prescription entry required manual patient profile IDs, creating preventable user error.
+- Patient appointment editing was missing.
+- UI navigation worked by selected section state, but workflows had weak loading, disabled, confirmation, and validation behavior.
+
+## 3. Architecture
+
+```text
+React Frontend (Vite, port 3000)
+        |
+        v
+API Gateway (8080)
+JWT validation, role checks, proxy routing
+        |
+        +--> User Service (8081)         -> user_db
+        +--> Doctor Service (8082)       -> doctor_db
+        +--> Patient Service (8083)      -> patient_db
+        +--> Appointment Service (8084)  -> appointment_db
+```
+
+All browser and Postman calls should use:
 
 ```text
 http://localhost:8080/api
 ```
 
----
+Service ownership model:
 
-## 5. User Roles and Responsibilities
+- User IDs are the security identity from JWT `sub`.
+- Appointment `doctorId` is the doctor user ID.
+- Appointment `patientId` is the patient user ID.
+- Prescription `doctorId` is the doctor user ID.
+- Prescription `patientId` is the patient user ID.
+- Profile IDs still exist for profile tables, but they are no longer required for prescribing.
 
-### Admin
+## 4. Services
 
-Admin can:
+| Service | Port | Responsibility |
+|---|---:|---|
+| API Gateway | 8080 | Validates JWT roles and forwards API calls |
+| User Service | 8081 | Login, admin bootstrap, doctor/patient account creation |
+| Doctor Service | 8082 | Doctor profiles, prescription ownership, patient prescription history |
+| Patient Service | 8083 | Patient profiles, phone validation, patient prescription aggregation |
+| Appointment Service | 8084 | Booking, rescheduling, status workflow, slot conflict checks |
 
-- Login using the default admin credentials
-- Create doctor accounts and doctor profiles
-- Create patient accounts and patient profiles
-- View all doctors
-- View all patients
-- View all appointments
-
-Default admin credentials:
-
-```text
-username: admin
-password: admin123
-```
-
-The default admin is created when:
-
-```properties
-app.admin.bootstrap.enabled=true
-```
-
-### Doctor
-
-Doctor can:
-
-- Login after Admin creates the doctor account
-- View assigned appointments
-- Change appointment status
-- Create prescriptions
-- View a patient's prescription history
-- View the doctor list
-
-### Patient
-
-Patient can:
-
-- Login after Admin creates the patient account
-- View available doctors
-- Book a future appointment
-- View own appointments
-
----
-
-## 6. Authentication and Authorization
+## 5. Security Rules
 
 Only this endpoint is public:
 
@@ -149,140 +86,178 @@ Only this endpoint is public:
 POST /api/users/login
 ```
 
-The removed public endpoint is:
+JWT-protected requests must include:
 
 ```http
-POST /api/users/register
+Authorization: Bearer <token>
 ```
 
-For protected APIs, pass the JWT token:
+Role protection:
 
-```http
-Authorization: Bearer JWT_TOKEN_VALUE
+| Capability | Admin | Doctor | Patient |
+|---|:---:|:---:|:---:|
+| Create doctor account/profile | Yes | No | No |
+| Create patient account/profile | Yes | No | No |
+| List doctors | Yes | Yes | Yes |
+| List patients | Yes | No | No |
+| Book appointment | No | No | Yes |
+| Edit own pending appointment | No | No | Yes |
+| View own appointments | No | No | Yes |
+| View assigned appointments | No | Yes | No |
+| Update assigned appointment status | No | Yes | No |
+| Create prescription for owned completed appointment | No | Yes | No |
+| View own prescriptions | No | No | Yes |
+| Monitor all appointments | Yes | No | No |
+
+Service-level ownership checks:
+
+- Patients can only list and edit appointments where `appointment.patientId == JWT subject`.
+- Doctors can only list and update appointments where `appointment.doctorId == JWT subject`.
+- Admin can list all appointments.
+- Doctors can create prescriptions only for appointments assigned to them.
+- Patients can retrieve prescriptions only for their own user ID.
+
+## 6. Validation Rules
+
+General validation:
+
+- Required fields use `@NotBlank` and `@NotNull`.
+- String length checks use `@Size`.
+- Age uses `@Min(0)`.
+- Appointment dates use `@Future`.
+- Invalid state changes return clean HTTP errors.
+- Duplicate and conflict scenarios return `409 CONFLICT`.
+- Ownership violations return `403 FORBIDDEN`.
+- Missing records return `404 NOT FOUND`.
+
+Phone validation:
+
+- Exactly 10 digits.
+- Must start with `6`, `7`, `8`, or `9`.
+- Repeated digits like `9999999999` and `1111111111` are rejected.
+- `1234567890` is rejected.
+- Phone number must be unique across patient profiles.
+- Frontend validates in real time before submission.
+
+Appointment validation:
+
+- Appointment time must be in the future.
+- Doctor ID must be valid and positive.
+- Doctor cannot have another non-cancelled appointment in the same 30-minute slot window.
+- Duplicate patient + doctor + exact appointment time is rejected.
+- Patients can edit only `PENDING` appointments.
+- Doctors can change status only for their assigned appointments.
+
+Allowed status transitions:
+
+```text
+PENDING   -> CONFIRMED or CANCELLED
+CONFIRMED -> COMPLETED or CANCELLED
+COMPLETED -> no further transition
+CANCELLED -> no further transition
 ```
 
-Role access matrix:
+Prescription validation:
 
-| API Operation | Admin | Doctor | Patient | Public |
-|---|:---:|:---:|:---:|:---:|
-| Login user | Yes | Yes | Yes | Yes |
-| Create doctor account and profile | Yes | No | No | No |
-| Create patient account and profile | Yes | No | No | No |
-| View current token identity | Yes | Yes | Yes | No |
-| List doctors | Yes | Yes | Yes | No |
-| View doctor own profile | No | Yes | No | No |
-| Create prescription | No | Yes | No | No |
-| View patient prescription history | No | Yes | No | No |
-| List patients | Yes | No | No | No |
-| View patient own profile | No | No | Yes | No |
-| View own prescriptions | No | No | Yes | No |
-| Book appointment | No | No | Yes | No |
-| View own patient appointments | No | No | Yes | No |
-| View assigned doctor appointments | No | Yes | No | No |
-| Update appointment status | No | Yes | No | No |
-| View all appointments | Yes | No | No | No |
+- Prescription content is required.
+- Prescription content must be 5 to 2000 characters.
+- Appointment must exist.
+- Appointment must belong to the logged-in doctor.
+- Appointment must be `COMPLETED`.
+- Only one prescription is allowed per appointment.
+- Patient ID is resolved from the appointment service, not trusted from the frontend.
 
----
+## 7. Database Entities
 
-## 7. Database Design
+### `user_db.app_users`
 
-The microservices use separate databases. References across services are stored as numeric IDs instead of database foreign keys.
-
-### User Database: `user_db`
-
-Table: `app_users`
-
-| Field | Description |
+| Field | Purpose |
 |---|---|
-| `id` | Unique registered user ID |
+| `id` | User security identity |
 | `username` | Unique login username |
-| `password_hash` | BCrypt encrypted password value |
+| `password_hash` | BCrypt password hash |
 | `role` | `ADMIN`, `DOCTOR`, or `PATIENT` |
+| `created_at` | Audit timestamp |
+| `updated_at` | Audit timestamp |
 
-### Doctor Database: `doctor_db`
+Indexes:
 
-Table: `doctor_profiles`
+- `idx_app_users_username`
+- `idx_app_users_role`
 
-| Field | Description |
+### `patient_db.patient_profiles`
+
+| Field | Purpose |
 |---|---|
-| `id` | Unique doctor profile ID |
-| `user_id` | User ID of the doctor account |
-| `name` | Doctor name |
-| `specialization` | Medical specialization |
+| `id` | Patient profile ID |
+| `user_id` | Linked user-service ID |
+| `name` | Patient full name |
+| `age` | Optional age |
+| `phone` | Unique validated mobile number |
+| `created_at` | Audit timestamp |
+| `updated_at` | Audit timestamp |
 
-Table: `prescriptions`
+Constraints and indexes:
 
-| Field | Description |
+- Unique `user_id`
+- Unique `phone`
+- `idx_patient_user_id`
+- `idx_patient_phone`
+
+### `doctor_db.doctor_profiles`
+
+| Field | Purpose |
 |---|---|
-| `id` | Unique prescription ID |
-| `appointment_id` | Appointment to which the prescription belongs |
-| `patient_id` | Patient profile ID |
-| `doctor_id` | Doctor profile ID |
-| `content` | Prescription instructions |
-| `created_at` | Prescription creation time |
+| `id` | Doctor profile ID |
+| `user_id` | Linked user-service ID |
+| `name` | Doctor full name |
+| `specialization` | Doctor specialization |
+| `created_at` | Audit timestamp |
+| `updated_at` | Audit timestamp |
 
-### Patient Database: `patient_db`
+Constraints and indexes:
 
-Table: `patient_profiles`
+- Unique `user_id`
+- `idx_doctor_user_id`
 
-| Field | Description |
+### `doctor_db.prescriptions`
+
+| Field | Purpose |
 |---|---|
-| `id` | Unique patient profile ID |
-| `user_id` | User ID of the patient account |
-| `name` | Patient name |
-| `age` | Patient age |
-| `phone` | Contact number |
+| `id` | Prescription ID |
+| `appointment_id` | Linked appointment ID |
+| `patient_id` | Patient user ID |
+| `doctor_id` | Doctor user ID |
+| `content` | Prescription content |
+| `created_at` | Audit timestamp |
+| `updated_at` | Audit timestamp |
 
-### Appointment Database: `appointment_db`
+Constraints and indexes:
 
-Table: `appointments`
+- Unique `appointment_id`
+- `idx_prescriptions_patient`
+- `idx_prescriptions_doctor`
+- `idx_prescriptions_appointment`
 
-| Field | Description |
+### `appointment_db.appointments`
+
+| Field | Purpose |
 |---|---|
-| `id` | Unique appointment ID |
+| `id` | Appointment ID |
 | `doctor_id` | Doctor user ID |
 | `patient_id` | Patient user ID |
-| `appointment_time` | Requested appointment time |
-| `status` | Current appointment status |
+| `appointment_time` | Requested appointment date and time |
+| `status` | Appointment lifecycle status |
+| `created_at` | Audit timestamp |
+| `updated_at` | Audit timestamp |
 
-Allowed appointment status values:
+Indexes:
 
-```text
-PENDING
-CONFIRMED
-COMPLETED
-CANCELLED
-```
+- `idx_appointments_patient_time`
+- `idx_appointments_doctor_time`
+- `idx_appointments_status`
 
----
-
-## 8. Functional Workflow
-
-```text
-System starts
-       |
-Default Admin is created
-       |
-Admin logs in
-       |
-Admin creates Doctor account + profile
-       |
-Admin creates Patient account + profile
-       |
-Doctor and Patient log in
-       |
-Patient views doctors and books appointment
-       |
-Doctor confirms appointment
-       |
-Doctor creates prescription
-       |
-Admin views all appointments
-```
-
----
-
-## 9. API Documentation
+## 8. API Reference
 
 Base URL:
 
@@ -290,152 +265,164 @@ Base URL:
 http://localhost:8080/api
 ```
 
-### Login User
-
-| Item | Details |
-|---|---|
-| Method | `POST` |
-| Endpoint | `/users/login` |
-| Access | Public |
-| Purpose | Verifies username/password and returns a JWT token |
-
-Request:
-
-```json
-{
-  "username": "admin",
-  "password": "admin123"
-}
-```
-
-Response example:
-
-```json
-{
-  "token": "JWT_TOKEN",
-  "role": "ADMIN",
-  "userId": "1"
-}
-```
-
-### Admin Creates Doctor
-
-| Item | Details |
-|---|---|
-| Method | `POST` |
-| Endpoint | `/users/admin/create-doctor` |
-| Access | Admin |
-| Purpose | Creates doctor login account and doctor profile |
-
-Request:
-
-```json
-{
-  "username": "demo_doctor_01",
-  "password": "doctor123",
-  "name": "Dr Sharma",
-  "specialization": "Cardiology"
-}
-```
-
-Response example:
-
-```json
-{
-  "userId": 2,
-  "profileId": 1,
-  "message": "Doctor account and profile created successfully"
-}
-```
-
-### Admin Creates Patient
-
-| Item | Details |
-|---|---|
-| Method | `POST` |
-| Endpoint | `/users/admin/create-patient` |
-| Access | Admin |
-| Purpose | Creates patient login account and patient profile |
-
-Request:
-
-```json
-{
-  "username": "demo_patient_01",
-  "password": "patient123",
-  "name": "Rahul Kumar",
-  "age": 25,
-  "phone": "9876543210"
-}
-```
-
-Response example:
-
-```json
-{
-  "userId": 3,
-  "profileId": 1,
-  "message": "Patient account and profile created successfully"
-}
-```
-
-These admin creation APIs never return JWT tokens. Doctor and Patient must login separately with `/users/login`.
-
-### Other Main APIs
+### User APIs
 
 | Method | Endpoint | Access | Purpose |
 |---|---|---|---|
-| `GET` | `/users/me` | Authenticated | Shows token user ID and role |
-| `GET` | `/doctors` | Authenticated | Lists doctors |
-| `GET` | `/doctors/me` | Doctor | Shows own doctor profile |
-| `POST` | `/doctors/prescriptions` | Doctor | Creates prescription |
-| `GET` | `/doctors/patient-history/{patientProfileId}` | Doctor | Shows patient prescription history |
-| `GET` | `/patients` | Admin | Lists patients |
-| `GET` | `/patients/me` | Patient | Shows own patient profile |
-| `GET` | `/patients/my-prescriptions` | Patient | Shows prescriptions written for the logged-in patient |
-| `POST` | `/appointments` | Patient | Books appointment |
-| `GET` | `/appointments/my` | Patient | Shows patient appointments |
-| `GET` | `/appointments/doctor` | Doctor | Shows doctor appointments |
-| `PATCH` | `/appointments/{appointmentId}/status` | Doctor | Updates appointment status |
-| `GET` | `/appointments` | Admin | Lists all appointments |
+| `POST` | `/users/login` | Public | Login and receive JWT |
+| `GET` | `/users/me` | Authenticated | View token identity |
+| `POST` | `/users/admin/create-doctor` | Admin | Create doctor user and profile |
+| `POST` | `/users/admin/create-patient` | Admin | Create patient user and profile |
 
----
+### Doctor APIs
 
-## 10. Installation and Execution Procedure
+| Method | Endpoint | Access | Purpose |
+|---|---|---|---|
+| `GET` | `/doctors` | Authenticated | List doctors |
+| `GET` | `/doctors/me` | Doctor | Get own doctor profile |
+| `POST` | `/doctors/prescriptions` | Doctor | Create prescription for completed assigned appointment |
+| `GET` | `/doctors/patient-history/{patientUserId}` | Doctor | View prescriptions written by this doctor for that patient |
 
-Create these PostgreSQL databases:
+### Patient APIs
 
-```text
-user_db
-doctor_db
-patient_db
-appointment_db
-```
+| Method | Endpoint | Access | Purpose |
+|---|---|---|---|
+| `GET` | `/patients` | Admin | List patients |
+| `GET` | `/patients/me` | Patient | Get own patient profile |
+| `GET` | `/patients/my-prescriptions` | Patient | Get own prescriptions |
 
-Build the backend:
+### Appointment APIs
+
+| Method | Endpoint | Access | Purpose |
+|---|---|---|---|
+| `POST` | `/appointments` | Patient | Book appointment |
+| `PUT` | `/appointments/{appointmentId}` | Patient | Edit own pending appointment |
+| `GET` | `/appointments/my` | Patient | List own appointments |
+| `GET` | `/appointments/doctor` | Doctor | List assigned appointments |
+| `GET` | `/appointments/{appointmentId}` | Patient/Doctor/Admin | Owned appointment lookup |
+| `PATCH` | `/appointments/{appointmentId}/status` | Doctor | Update assigned appointment status |
+| `GET` | `/appointments` | Admin | List all appointments |
+
+## 9. Frontend Workflow
+
+Admin dashboard:
+
+- Creates doctor accounts and profiles in one step.
+- Creates patient accounts and profiles in one step.
+- Validates patient phone before request.
+- Disables buttons during API calls.
+- Shows doctors, patients, and all appointments.
+
+Patient dashboard:
+
+- Lists doctors.
+- Books future appointments.
+- Edits pending appointments only.
+- Shows own appointments from `/appointments/my`.
+- Polls and refreshes own prescriptions from `/patients/my-prescriptions`.
+
+Doctor dashboard:
+
+- Lists only assigned appointments from `/appointments/doctor`.
+- Uses confirmation dialogs before status changes.
+- Enables legal status action buttons only.
+- Writes prescriptions by selecting a completed appointment.
+- Does not ask for patient profile ID.
+- Searches patient history by patient user ID and returns only prescriptions created by that doctor.
+
+UX cleanup:
+
+- Removed numeric Step 1 / Step 2 / Step 3 hero cards.
+- Replaced them with concise enterprise capability indicators.
+- Added professional panels, tables, empty states, disabled states, and responsive layout behavior.
+- Reduced rounded card styling for a more operational dashboard feel.
+
+## 10. Developer File Map
+
+Appointment ownership and workflow:
+
+- `backend/appointment-service/src/main/java/com/hospital/appointments/service/impl/AppointmentServiceImpl.java`
+- `backend/appointment-service/src/main/java/com/hospital/appointments/controller/AppointmentController.java`
+- `backend/appointment-service/src/main/java/com/hospital/appointments/dto/AppointmentUpdateRequest.java`
+- `backend/appointment-service/src/main/java/com/hospital/appointments/repository/AppointmentRepository.java`
+- `backend/appointment-service/src/main/java/com/hospital/appointments/security/SecurityConfig.java`
+
+Prescription synchronization:
+
+- `backend/doctor-service/src/main/java/com/hospital/doctors/service/impl/DoctorServiceImpl.java`
+- `backend/doctor-service/src/main/java/com/hospital/doctors/controller/DoctorController.java`
+- `backend/doctor-service/src/main/java/com/hospital/doctors/dto/AppointmentDto.java`
+- `backend/doctor-service/src/main/java/com/hospital/doctors/dto/PrescriptionCreateRequest.java`
+- `backend/patient-service/src/main/java/com/hospital/patients/service/impl/PatientServiceImpl.java`
+
+Phone validation:
+
+- `backend/patient-service/src/main/java/com/hospital/patients/validation/PhoneNumberValidator.java`
+- `backend/patient-service/src/main/java/com/hospital/patients/dto/PatientProfileDto.java`
+- `backend/user-service/src/main/java/com/hospital/users/dto/AdminCreatePatientRequest.java`
+- `frontend/src/api.js`
+- `frontend/src/components/AdminDashboard.jsx`
+
+Security and error handling:
+
+- `backend/api-gateway/src/main/java/com/hospital/gateway/security/SecurityConfig.java`
+- `backend/user-service/src/main/java/com/hospital/users/controller/GlobalExceptionHandler.java`
+- `backend/patient-service/src/main/java/com/hospital/patients/controller/GlobalExceptionHandler.java`
+- `backend/doctor-service/src/main/java/com/hospital/doctors/controller/GlobalExceptionHandler.java`
+- `backend/appointment-service/src/main/java/com/hospital/appointments/controller/GlobalExceptionHandler.java`
+
+Frontend dashboards:
+
+- `frontend/src/components/AdminDashboard.jsx`
+- `frontend/src/components/PatientDashboard.jsx`
+- `frontend/src/components/DoctorDashboard.jsx`
+- `frontend/src/components/AuthPage.jsx`
+- `frontend/src/components/Ui.jsx`
+- `frontend/src/styles.css`
+
+## 11. Maintenance Notes
+
+- Keep user ID as the JWT identity source across services.
+- Do not accept patient or doctor ownership from frontend form fields when it can be derived from JWT or appointment lookup.
+- Add new appointment states only after updating `validateStatusTransition`.
+- Add new prescription rules in `DoctorServiceImpl.addPrescription`.
+- Keep gateway security and downstream service security aligned.
+- Use `ResponseStatusException` for precise HTTP status responses.
+- Keep frontend validation as usability support; backend validation remains authoritative.
+
+## 12. Build and Run
+
+Backend build:
 
 ```powershell
 cd C:\Users\Mrigank\Desktop\hosptal\backend
-& "..\.tools\apache-maven-3.9.9\bin\mvn.cmd" -DskipTests package
+..\.tools\apache-maven-3.9.9\bin\mvn.cmd -q -pl appointment-service,doctor-service,patient-service,user-service,api-gateway -am test
 ```
 
-Start each service in a separate terminal:
+Frontend build:
 
 ```powershell
-java -jar backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
+cd C:\Users\Mrigank\Desktop\hosptal\frontend
+$env:PATH='C:\Users\Mrigank\Desktop\hosptal\.tools\node-v20.18.0-win-x64;' + $env:PATH
+..\.tools\node-v20.18.0-win-x64\npm.cmd run build
+```
+
+Start services:
+
+```powershell
 java -jar backend\user-service\target\user-service-1.0.0-SNAPSHOT.jar
 java -jar backend\doctor-service\target\doctor-service-1.0.0-SNAPSHOT.jar
 java -jar backend\patient-service\target\patient-service-1.0.0-SNAPSHOT.jar
 java -jar backend\appointment-service\target\appointment-service-1.0.0-SNAPSHOT.jar
+java -jar backend\api-gateway\target\api-gateway-1.0.0-SNAPSHOT.jar
 ```
 
-Start the frontend:
+Start frontend:
 
 ```powershell
 cd C:\Users\Mrigank\Desktop\hosptal\frontend
-$env:Path = "C:\Users\Mrigank\Desktop\hosptal\.tools\node-v20.18.0-win-x64;$env:Path"
-npm install
-npm run dev
+$env:PATH='C:\Users\Mrigank\Desktop\hosptal\.tools\node-v20.18.0-win-x64;' + $env:PATH
+..\.tools\node-v20.18.0-win-x64\npm.cmd run dev
 ```
 
 Open:
@@ -444,87 +431,16 @@ Open:
 http://localhost:3000
 ```
 
----
+## 13. Verification Completed
 
-## 11. Testing Workflow
+The upgraded code was verified with:
 
-1. Start all backend services.
-2. Login as Admin using `admin` / `admin123`.
-3. Admin creates a Doctor account and profile.
-4. Admin creates a Patient account and profile.
-5. Login as Patient and book a future appointment.
-6. Login as Doctor and update the appointment status to `CONFIRMED`.
-7. Doctor creates a prescription using the patient profile ID.
-8. Patient opens My Prescriptions and sees the prescription.
-9. Doctor views patient prescription history.
-10. Admin views all appointments.
-
-Values to note during demo:
-
-```text
-ADMIN_TOKEN =
-DOCTOR_USER_ID =
-DOCTOR_PROFILE_ID =
-PATIENT_USER_ID =
-PATIENT_PROFILE_ID =
-APPOINTMENT_ID =
+```powershell
+..\.tools\apache-maven-3.9.9\bin\mvn.cmd -q -pl appointment-service,doctor-service,patient-service,user-service,api-gateway -am test
 ```
 
----
+```powershell
+..\.tools\node-v20.18.0-win-x64\npm.cmd run build
+```
 
-## 12. Security Features
-
-- Public registration is disabled.
-- Only `/api/users/login` is public.
-- Default admin is created by backend bootstrap, not by public registration.
-- Admin-only APIs create Doctor and Patient accounts.
-- Passwords are stored as BCrypt hashes.
-- JWT tokens are generated only during login.
-- API Gateway verifies JWT tokens and role permissions.
-- Doctor, patient, and appointment services also validate forwarded bearer tokens.
-- Duplicate usernames are prevented across all roles.
-
----
-
-## 13. Current Limitations
-
-- This project is suitable for a local academic demonstration.
-- Admin bootstrap credentials are simple demo credentials and should be changed for production.
-- Microservices reference one another using IDs and do not use cross-database foreign keys.
-- There is no doctor schedule conflict checking before appointments are booked.
-- Prescriptions are stored as simple text content.
-- Automated test classes are not currently included.
-
----
-
-## 14. Future Enhancements
-
-1. Add richer dashboards with appointment calendars and printable prescription views.
-2. Change default admin credentials through environment variables.
-3. Add appointment date availability and conflict prevention.
-4. Add patient medical records, billing, and reports.
-5. Add API documentation using Swagger/OpenAPI.
-6. Add automated integration and security tests.
-7. Store configuration secrets using environment variables.
-
----
-
-## 15. Conclusion
-
-The Hospital Management System demonstrates a React and Spring Boot microservices workflow for Admin, Doctor, and Patient users. The upgraded version is more production-like because users cannot self-register. The backend creates a default admin account, and Admin is responsible for creating doctor and patient accounts with their profiles. Doctor and Patient users then login separately and perform their role-specific hospital tasks.
-
----
-
-## 16. Suggested Screenshots for Submission
-
-| Screenshot No. | Screenshot Content |
-|---:|---|
-| 1 | pgAdmin showing `user_db`, `doctor_db`, `patient_db`, `appointment_db` |
-| 2 | PowerShell showing ports `3000` and `8080` to `8084` listening |
-| 3 | React login page |
-| 4 | Admin dashboard showing doctor and patient account creation |
-| 5 | Admin dashboard showing created doctor and patient profiles |
-| 6 | Patient dashboard showing booked appointment with `PENDING` status |
-| 7 | Doctor dashboard showing appointment updated to `CONFIRMED` |
-| 8 | Doctor dashboard showing prescription history |
-| 9 | Postman response from `/api/users/admin/create-doctor` or `/api/users/admin/create-patient` |
+Both backend and frontend builds completed successfully after using the bundled toolchains.
